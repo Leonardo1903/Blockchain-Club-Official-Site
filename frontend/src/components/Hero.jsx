@@ -9,7 +9,7 @@ import {
   animate,
 } from "framer-motion";
 
-const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
+const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234", "#FFFF00"];
 
 const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -28,6 +28,7 @@ const Hero = () => {
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
   return (
+    <>
     <motion.section
       style={{
         backgroundImage,
@@ -69,6 +70,14 @@ const Hero = () => {
         </Canvas>
       </div>
     </motion.section>
+    <section>
+      <div className="flex flex-col md-flex-row justify-center items-center">
+          <div className="">
+
+          </div>
+      </div>
+    </section>
+    </>
   );
 };
 
