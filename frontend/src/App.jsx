@@ -1,5 +1,4 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import './App.css'
 import Layout from './Layout'
 import Hero from './components/Hero'
 import About from './components/About'

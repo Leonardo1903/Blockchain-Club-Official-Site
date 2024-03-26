@@ -85,7 +85,7 @@ const users = [
   },
 ]
 
-export function About() {
+function About() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   const toggleMenu = () => {
@@ -369,3 +369,6 @@ export function About() {
     </div>
   )
 }
+
+
+export default About;

@@ -35,7 +35,7 @@ const locations = [
   },
 ]
 
-export function Contact() {
+function Contact() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   const toggleMenu = () => {
@@ -386,3 +386,5 @@ export function Contact() {
     </div>
   )
 }
+
+export default Contact;
