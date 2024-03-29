@@ -17,7 +17,7 @@ const menuItems = [
   },
 ];
 
-export function Navbar() {
+function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -139,3 +139,5 @@ export function Navbar() {
     </div>
   );
 }
+
+export default Navbar;
