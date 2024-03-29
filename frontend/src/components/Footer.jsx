@@ -20,12 +20,12 @@ export function Footer() {
                     fill="black"
                   />
                 </svg>
-                <span className="ml-4 text-lg font-bold">DevUI</span>
+                <span className="ml-4 text-lg font-bold text-white">DevUI</span>
               </div>
               <div>
-                <p className="mb-4  text-base font-medium">The Tailwind CSS Component library</p>
+                <p className="mb-4  text-base font-medium text-white">The Tailwind CSS Component library</p>
                 <p className="text-sm text-gray-100">
-                  &copy; Copyright 2022. All Rights Reserved by DevUI.
+                  &copy; Copyright 2022. All Rights Reserved by BlockchainClubVITb.
                 </p>
               </div>
             </div>

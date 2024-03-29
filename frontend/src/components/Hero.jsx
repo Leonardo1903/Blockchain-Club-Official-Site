@@ -2,14 +2,16 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
+import Lottie from "react-lottie";
 import {
   useMotionTemplate,
   useMotionValue,
   motion,
   animate,
 } from "framer-motion";
+import BitcoinData from "../assets/BitcoinAnimation-1711696539205.json"
 
-const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234", "#FFFF00"];
+const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
 
 const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
@@ -27,6 +29,15 @@ const Hero = () => {
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
+  const BitcoinAnimationOptions = {
+    loop: true, 
+    autoplay: true, 
+    animationData: BitcoinData, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+};
+
   return (
     <>
     <motion.section
@@ -35,20 +46,18 @@ const Hero = () => {
       }}
       className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
     >
-      <div className="relative z-10 flex flex-col items-center">
-        <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
-          Beta Now Live!
-        </span>
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full md:w-[1182px] mx-auto space-y-4">
+        <div className="w-full">
+        <h1 className="md:max-w-full bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
           Decrease your SaaS churn by over 90%
         </h1>
-        <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
+        <p className="my-6 max-w-full md:mx-20 text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
           distinctio eum impedit nihil ipsum modi.
         </p>
         <motion.button
           style={{
-            border,
+            border, 
             boxShadow,
           }}
           whileHover={{
@@ -57,11 +66,15 @@ const Hero = () => {
           whileTap={{
             scale: 0.985,
           }}
-          className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+          className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 mx-auto"
         >
           Start free trial
           <ArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
         </motion.button>
+        </div>
+        <div>
+        <Lottie options={BitcoinAnimationOptions} height={400} width={400} />
+        </div>
       </div>
 
       <div className="absolute inset-0 z-0">
