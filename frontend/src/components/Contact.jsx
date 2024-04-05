@@ -1,48 +1,23 @@
-
-import React from 'react'
-import { Menu, X, MapPin } from 'lucide-react'
-
-
-const locations = [
-  {
-    title: 'Bengaluru office',
-    timings: 'Mon-Sat 9am to 5pm.',
-    address: '100, Electronic City Phase-1, Bengaluru, Karnataka 560100 IN',
-  },
-  {
-    title: 'Head office',
-    timings: 'Mon-Sat 9am to 5pm.',
-    address: '12th Main Rd, Indiranagar, Bengaluru, Karnataka 560008 IN',
-  },
-  {
-    title: 'Karnataka office',
-    timings: 'Mon-Sat 9am to 5pm.',
-    address: '42, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025 IN',
-  },
-]
-
 function Contact() {
-
-
   return (
-    <div>
-      
-
+    <div className="bg-black">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
           <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
             {/* contact from */}
             <div className="flex items-center justify-center">
               <div className="px-2 md:px-12">
-                <p className="text-2xl font-bold text-gray-900 md:text-4xl">Get in touch</p>
-                <p className="mt-4 text-lg text-gray-600">
+                <p className="text-2xl font-bold text-white md:text-4xl">
+                  Get in touch
+                </p>
+                <p className="mt-4 text-lg text-white">
                   Our friendly team would love to hear from you.
                 </p>
                 <form action="" className="mt-8 space-y-4">
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                     <div className="grid w-full  items-center gap-1.5">
                       <label
-                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="first_name"
                       >
                         First Name
@@ -56,7 +31,7 @@ function Contact() {
                     </div>
                     <div className="grid w-full  items-center gap-1.5">
                       <label
-                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="last_name"
                       >
                         Last Name
@@ -71,7 +46,7 @@ function Contact() {
                   </div>
                   <div className="grid w-full  items-center gap-1.5">
                     <label
-                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       htmlFor="email"
                     >
                       Email
@@ -85,7 +60,7 @@ function Contact() {
                   </div>
                   <div className="grid w-full  items-center gap-1.5">
                     <label
-                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       htmlFor="phone_number"
                     >
                       Phone number
@@ -99,7 +74,7 @@ function Contact() {
                   </div>
                   <div className="grid w-full  items-center gap-1.5">
                     <label
-                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       htmlFor="message"
                     >
                       Message
@@ -128,35 +103,8 @@ function Contact() {
           </div>
         </div>
       </div>
-      {/* Address */}
-      <div className="rounded-lg bg-gray-100">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="py-20">
-            <div className="grid grid-cols-1 gap-x-20 gap-y-8 lg:grid-cols-2">
-              <div className="space-y-4">
-                <p className="w-full text-4xl font-bold text-gray-900">Our Offices</p>
-                <p className="w-full text-lg text-gray-600">Find us at these locations.</p>
-              </div>
-              <div className="space-y-4 divide-y-2">
-                {locations.map((location) => (
-                  <div
-                    key={location.title}
-                    className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full"
-                  >
-                    <p className="w-full text-xl font-semibold  text-gray-900">{location.title}</p>
-                    <p className="w-full text-base  text-gray-600">{location.timings}</p>
-                    <p className="text-sm font-semibold text-gray-600">{location.address}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      
     </div>
-  )
+  );
 }
 
 export default Contact;
