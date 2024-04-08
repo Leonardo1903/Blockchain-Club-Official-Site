@@ -11,6 +11,8 @@ import {
 } from "framer-motion";
 import BitcoinData from "../assets/BitcoinAnimation-1711696539205.json";
 import Motive from "./Motive";
+import { GoogleGeminiEffectDemo } from "./google-gemini-effect";
+import { BackgroundBeamsDemo } from "./BackgroundBeams";
 
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
 
@@ -93,7 +95,9 @@ const Hero = () => {
           <div className=""></div>
         </div>
       </section>
-      <Motive />
+      {/* Motive */}
+      <GoogleGeminiEffectDemo/>
+      <BackgroundBeamsDemo/>
     </>
   );
 };
