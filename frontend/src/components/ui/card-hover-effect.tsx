@@ -24,7 +24,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "flex flex-wrap flex-col md:flex-row  md:gap-8 w-full h-full",
+        "flex flex-wrap flex-col md:flex-row  md:space-y-4 w-full h-full ",
         className
       )}
     >
@@ -54,7 +54,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <div className='flex flex-col md:flex-row'>
+            <div className='flex flex-col md:flex-row '>
               <div className='flex flex-col'>
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
@@ -141,7 +141,7 @@ export function CardImage({ animationOptions }) {
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!container.current || !animationOptions) return; // Check if container ref and animationOptions are defined
+    if (!container.current || !animationOptions) return;
 
     const anim = lottie.loadAnimation({
       container: container.current,
@@ -158,5 +158,5 @@ export function CardImage({ animationOptions }) {
     };
   }, [animationOptions]);
 
-  return <div ref={container} />;
+  return <div ref={container} style={{ width: '100%', height: '100%' }} />;
 }

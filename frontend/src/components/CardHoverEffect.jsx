@@ -1,10 +1,11 @@
 import { HoverEffect } from "./ui/card-hover-effect.tsx";
 import InnovationAnimationData from "../assets/InnovationAnimationData.json";
 import ImpactAnimationData from "../assets/ImpactAnimationData.json";
-import MotiveAnimationData from "../assets/Animation - 1712510029344.json";
+import MotiveAnimationData from "../assets/MotiveAnimationData.json";
+
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto px-8 ">
       <HoverEffect items={projects} />
     </div>
   );

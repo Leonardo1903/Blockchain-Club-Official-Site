@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Lottie from "react-lottie";
 import InnovationAnimationData from "../assets/InnovationAnimationData.json";
 import ImpactAnimationData from "../assets/ImpactAnimationData.json";
-import MotiveAnimationData from "../assets/Animation - 1712510029344.json";
+import MotiveAnimationData from "../assets/MotiveAnimationData.json";
 
 function Motive() {
   const InnovationAnimationOptions = {
