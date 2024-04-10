@@ -3,8 +3,7 @@ import { cn } from "../../utils/cn.ts";
 import { AnimatePresence, motion } from "framer-motion";
 import {Link} from "react-router-dom";
 import { useState } from "react";
-import { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
+import Lottie from 'react-lottie';
 
 export const HoverEffect = ({
   items,
@@ -15,7 +14,7 @@ export const HoverEffect = ({
     description: string;
     link: string;
     image: string;
-    svg: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    animationData: any;
   }[];
   className?: string;
 }) => {
@@ -59,7 +58,7 @@ export const HoverEffect = ({
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
               </div>
-            <CardImage animationOptions={item.svg} />
+            <CardImage animationData={item.animationData} />
             </div>
 
           </Card>
@@ -137,26 +136,15 @@ export const CardDescription = ({
 //   );
 // };
 
-export function CardImage({ animationOptions }) {
-  const container = useRef<HTMLDivElement>(null);
+export function CardImage({ animationData }) {
+  const animationOption = {
+    loop: true, 
+    autoplay: true, 
+    animationData: animationData, 
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+};
 
-  useEffect(() => {
-    if (!container.current || !animationOptions) return;
-
-    const anim = lottie.loadAnimation({
-      container: container.current,
-      renderer: 'svg',
-      loop: animationOptions.loop,
-      autoplay: animationOptions.autoplay,
-      animationData: animationOptions.animationData,
-    });
-
-    return () => {
-      if (anim) {
-        anim.destroy();
-      }
-    };
-  }, [animationOptions]);
-
-  return <div ref={container} style={{ width: '100%', height: '100%' }} />;
+  return <Lottie options={animationOption} height={400} width={400} />;
 }

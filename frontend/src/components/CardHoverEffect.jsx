@@ -15,39 +15,18 @@ export const projects = [
       title: " 01. Empowerment",
       description:
         "Our mission is to empower members with the knowledge and skills needed to navigate the blockchain landscape confidently. Through workshops, seminars, and projects, we equip individuals to become leaders in the field.",
-      animationOptions: {
-        loop: true,
-        autoplay: true,
-        animationData: MotiveAnimationData,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice",
-        },
-      },
+      animationData: MotiveAnimationData,
     },
     {
       title: "02. Innovation",
       description:
         "We foster a culture of creativity and exploration, encouraging members to think outside the box and develop groundbreaking solutions to real-world problems.",
-      animationOptions: {
-        loop: true,
-        autoplay: true,
-        animationData: InnovationAnimationData,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice",
-        },
-      },
+      animationData : InnovationAnimationData,
     },
     {
       title: "03. Impact",
       description:
         "We prioritize making a difference with blockchain. Whether it's increasing transparency or promoting financial inclusion, our goal is to drive positive changes that improve lives.",
-      animationOptions: {
-        loop: true,
-        autoplay: true,
-        animationData: ImpactAnimationData,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice",
-        },
-      },
+      animationData: ImpactAnimationData,
     }
   ];
