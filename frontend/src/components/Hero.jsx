@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import Lottie from "react-lottie";
+import { TypewriterEffectSmoothDemo } from "./HeroTypewriter";
 import {
   useMotionTemplate,
   useMotionValue,
@@ -10,10 +11,10 @@ import {
   animate,
 } from "framer-motion";
 import BitcoinData from "../assets/BitcoinAnimation-1711696539205.json";
-import Motive from "./Motive";
 import { GoogleGeminiEffectDemo } from "./google-gemini-effect";
 import { BackgroundBeamsDemo } from "./BackgroundBeams";
 import { CardHoverEffectDemo } from "./CardHoverEffect";
+
 
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
 
@@ -52,9 +53,7 @@ const Hero = () => {
       >
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full md:w-[1182px] mx-auto space-y-4">
           <div className="w-full">
-            <h1 className="md:max-w-full bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-              Welcome To the Blockchain Club
-            </h1>
+            <TypewriterEffectSmoothDemo/>
             <p className="my-6 max-w-full md:mx-20 text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
               Empowering Innovators: Unleashing the Potential of Blockchain
             </p>
@@ -71,7 +70,7 @@ const Hero = () => {
               }}
               className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 mx-auto"
             >
-              Start free trial
+              Join Us!
               <ArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
             </motion.button>
           </div>
