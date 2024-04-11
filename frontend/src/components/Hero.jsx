@@ -53,11 +53,10 @@ const Hero = () => {
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full md:w-[1182px] mx-auto space-y-4">
           <div className="w-full">
             <h1 className="md:max-w-full bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-              Decrease your SaaS churn by over 90%
+              Welcome To the Blockchain Club
             </h1>
             <p className="my-6 max-w-full md:mx-20 text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
-              et, distinctio eum impedit nihil ipsum modi.
+              Empowering Innovators: Unleashing the Potential of Blockchain
             </p>
             <motion.button
               style={{
@@ -97,8 +96,8 @@ const Hero = () => {
         </div>
       </section>
       {/* Motive */}
-      <GoogleGeminiEffectDemo/>
-      <BackgroundBeamsDemo component={CardHoverEffectDemo}/>
+      <GoogleGeminiEffectDemo />
+      <BackgroundBeamsDemo component={CardHoverEffectDemo} />
     </>
   );
 };

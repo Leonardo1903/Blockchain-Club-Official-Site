@@ -11,22 +11,22 @@ export function CardHoverEffectDemo() {
   );
 }
 export const projects = [
-    {
-      title: " 01. Empowerment",
-      description:
-        "Our mission is to empower members with the knowledge and skills needed to navigate the blockchain landscape confidently. Through workshops, seminars, and projects, we equip individuals to become leaders in the field.",
-      animationData: MotiveAnimationData,
-    },
-    {
-      title: "02. Innovation",
-      description:
-        "We foster a culture of creativity and exploration, encouraging members to think outside the box and develop groundbreaking solutions to real-world problems.",
-      animationData : InnovationAnimationData,
-    },
-    {
-      title: "03. Impact",
-      description:
-        "We prioritize making a difference with blockchain. Whether it's increasing transparency or promoting financial inclusion, our goal is to drive positive changes that improve lives.",
-      animationData: ImpactAnimationData,
-    }
-  ];
+  {
+    title: " 01. Empowerment",
+    description:
+      "We empower members with the skills to navigate the blockchain landscape confidently. Through workshops, seminars, and projects, we foster leadership in the field. Join us to become a leader in blockchain technology.",
+    animationData: MotiveAnimationData,
+  },
+  {
+    title: "02. Innovation",
+    description:
+      "We nurture creativity and exploration, inspiring members to challenge conventional thinking. Our environment encourages innovative solutions to real-world challenges, fostering groundbreaking advancements.",
+    animationData: InnovationAnimationData,
+  },
+  {
+    title: "03. Impact",
+    description:
+      "We leverage blockchain for positive impact, enhancing transparency and promoting financial inclusion. Our initiatives drive meaningful change, utilizing blockchain as a catalyst for global improvement, thus creating a better world.",
+    animationData: ImpactAnimationData,
+  },
+];
