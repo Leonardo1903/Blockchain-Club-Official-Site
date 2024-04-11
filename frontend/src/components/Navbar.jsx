@@ -44,13 +44,13 @@ function Navbar() {
   return (
     <div
       className={`w-full  shadow-orange-400 sticky top-0 bg-black text-white z-50 ease-in-out ${
-        isScrolled ? "bg-opacity-10 backdrop-blur-md shadow-sm" : ""
+        isScrolled ? "bg-opacity-10 bg-white backdrop-blur-md shadow-sm" : ""
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span className="h-[10%]">
-            <img src={Logo} alt="" className="h-[10px]" />
+            {/* <img src={Logo} alt="" className="h-[10px]" /> */}
           </span>
         </div>
         <div className="hidden lg:block">

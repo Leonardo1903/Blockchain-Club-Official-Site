@@ -9,7 +9,7 @@ export const HoverEffect = ({
   items,
   className,
 }: {
-  items: {
+  items: { 
     title: string;
     description: string;
     link: string;

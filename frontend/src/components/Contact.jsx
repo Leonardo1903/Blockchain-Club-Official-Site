@@ -16,7 +16,7 @@ function Contact() {
 
   return (
     <div className="h-full w-full">
-      <BackgroundBoxesDemo/>
+      <BackgroundBoxesDemo heading={"CONTACT US!!"} subheading={"We want to hear from you"}/>
       <div className="bg-black">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto max-w-7xl py-12 md:py-24">
