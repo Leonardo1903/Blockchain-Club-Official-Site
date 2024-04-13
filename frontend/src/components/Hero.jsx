@@ -14,6 +14,7 @@ import BitcoinData from "../assets/BitcoinAnimation-1711696539205.json";
 import { GoogleGeminiEffectDemo } from "./google-gemini-effect";
 import { BackgroundBeamsDemo } from "./BackgroundBeams";
 import { CardHoverEffectDemo } from "./CardHoverEffect";
+import { PastEventsCards } from "./PastEvents";
 
 
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
@@ -97,6 +98,10 @@ const Hero = () => {
       {/* Motive */}
       <GoogleGeminiEffectDemo />
       <BackgroundBeamsDemo component={CardHoverEffectDemo} />
+      <section>
+      <PastEventsCards/>
+      </section>
+      
     </>
   );
 };
