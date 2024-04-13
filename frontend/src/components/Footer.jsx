@@ -1,6 +1,6 @@
 import Logo from "../assets/final_logo.png";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
           <div className="w-full p-6 md:w-1/2 lg:w-3/6">
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center">
-                <img src={Logo} alt="Logo" className="h-[10rem]"/>
+                <img src={Logo} alt="Logo" className="h-[10rem]" />
               </div>
             </div>
           </div>
@@ -41,10 +41,18 @@ function Footer() {
                     Contact Us
                   </Link>
                 </li>
-                <li>
-                  <div className="flex text-w">
-                  <FontAwesomeIcon icon="fa-brands fa-linkedin-in" style={{color: "#f7f9fd",}} />
-                  </div>
+                <li className="mb-4">
+                  <p className=" text-base font-medium text-gray-100">
+                    Connect with Us
+                  </p>
+                  <span className="flex ">
+                    <a href="https://www.linkedin.com/company/blockchain-club-vitb/">
+                      <FaLinkedin className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
+                    </a>
+                    <a href="https://www.instagram.com/blockchain_club_vitb/">
+                      <FaInstagram className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
+                    </a>
+                  </span>
                 </li>
               </ul>
             </div>

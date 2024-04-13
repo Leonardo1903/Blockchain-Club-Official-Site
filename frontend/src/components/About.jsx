@@ -56,14 +56,51 @@ function About() {
     <div className="bg-black">
       <div className="mx-auto max-w-full">
         {/* greetings */}
-        <BackgroundBoxesDemo heading={"ABOUT US"} subheading={"We are a team of professionals who are passionate about technology and innovation"}/>
+        <BackgroundBoxesDemo
+          heading={"ABOUT US"}
+          subheading={
+            "We are a team of professionals who are passionate about technology and innovation"
+          }
+        />
         {/* TEAM */}
         <div className="flex flex-col md:flex-row justify-center items-center flex-wrap space-x-4 mx-auto md:w-[1182px] ">
-          {users.map((user) => (
-            <ThreeDCardDemo key={user.name} user={user} name={user.name} image={user.image} position={user.position}/>
-          ))}
+          {/* First row */}
+          <div className="flex justify-center space-x-4">
+            {users.slice(0, 2).map((user) => (
+              <ThreeDCardDemo
+                key={user.name}
+                user={user}
+                name={user.name}
+                image={user.image}
+                position={user.position}
+              />
+            ))}
+          </div>
+          {/* Second row */}
+          <div className="flex justify-center space-x-4">
+            {users.slice(2, 5).map((user) => (
+              <ThreeDCardDemo
+                key={user.name}
+                user={user}
+                name={user.name}
+                image={user.image}
+                position={user.position}
+              />
+            ))}
+          </div>
+          {/* Third row */}
+          <div className="flex justify-center space-x-4">
+            {users.slice(5, 8).map((user) => (
+              <ThreeDCardDemo
+                key={user.name}
+                user={user}
+                name={user.name}
+                image={user.image}
+                position={user.position}
+              />
+            ))}
+          </div>
         </div>
-        
       </div>
     </div>
   );
