@@ -1,9 +1,8 @@
-import React from 'react';
-import { cn } from "../../utils/cn.ts";
-import { AnimatePresence, motion } from "framer-motion";
-import {Link} from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import Lottie from 'react-lottie';
+import { cn } from '../../utils/cn.ts';
 
 export const HoverEffect = ({
   items,
@@ -18,27 +17,22 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div
-      className={cn(
-        "flex flex-col sm:flex-row sm:w-3/4 sm:h-3/4 h-full w-full",
-        className
-      )}
-    >
-      {items.map((item, idx) => (
+    <div className={cn('flex flex-col sm:flex-row sm:w-3/4 sm:h-3/4 h-full w-full', className)}>
+      {items.map(({ title, description, link, animationData }, idx) => (
         <Link
-          to={item?.link}
-          key={item?.link}
-          className="relative group  block p-2 h-full w-full sm:w-1/2"
+          to={link}
+          key={link}
+          className="relative group block p-2 h-full w-full sm:w-1/2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full mx-4 bg-orange-200 dark:bg-orange-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full mx-4 bg-orange-200 dark:bg-orange-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -53,12 +47,12 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
 
-          <Card className="flex flex-col sm:flex-row items-center justify-between h-full w-full mx-4 flex-grow">
+          <Card className="flex flex-row sm:flex-row items-center justify-between h-full w-full mx-4 flex-grow">
             <div className="flex flex-col items-center sm:items-start">
-              <CardTitle className="text-lg text-orange-500" >{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardTitle className="text-lg text-orange-500">{title}</CardTitle>
+              <CardDescription>{description}</CardDescription>
             </div>
-            <CardImage className="w-full sm:w-1/2" animationData={item.animationData} />
+            <CardImageAnimation className="w-full sm:w-1/2" animationData={animationData} />
           </Card>
         </Link>
       ))}
@@ -76,7 +70,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-3/4 p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 ",
+        'flex flex-col md:flex-row rounded-2xl h-full w-3/4 p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20',
         className
       )}
       style={{ flex: 1 }}
@@ -87,6 +81,7 @@ export const Card = ({
     </div>
   );
 };
+
 export const CardTitle = ({
   className,
   children,
@@ -94,12 +89,9 @@ export const CardTitle = ({
   className?: string;
   children: React.ReactNode;
 }) => {
-  return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
-      {children}
-    </h4>
-  );
+  return <h4 className={cn('text-zinc-100 font-bold tracking-wide mt-4', className)}>{children}</h4>;
 };
+
 export const CardDescription = ({
   className,
   children,
@@ -108,29 +100,25 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
-      className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
-        className
-      )}
-    >
+    <p className={cn('mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm', className)}>
       {children}
     </p>
   );
 };
 
-
-export function CardImage({ animationData }) {
-  const animationOption = {
-    loop: true, 
-    autoplay: true, 
-    animationData: animationData, 
+export const CardImageAnimation = ({ animationData }) => {
+  const animationOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-};
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
 
-  return <div style={{ width: "100%", height: "200px" }}> 
-  <Lottie options={animationOption} height={200} width={200} />
-</div>;
-}
+  return (
+    <div style={{ width: '100%', height: '200px' }}>
+      <Lottie options={animationOptions} height={200} width={200} />
+    </div>
+  );
+};

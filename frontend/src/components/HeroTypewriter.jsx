@@ -1,4 +1,3 @@
-"use client";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect.tsx";
 export function TypewriterEffectSmoothDemo() {
   const words = [
@@ -18,10 +17,6 @@ export function TypewriterEffectSmoothDemo() {
     {
       text: "community",
     },
-    // {
-    //   text: "Aceternity.",
-    //   className: "text-blue-500 dark:text-blue-500",
-    // },
   ];
   return (
     <div className="flex flex-col items-center justify-center h-fit  ">
