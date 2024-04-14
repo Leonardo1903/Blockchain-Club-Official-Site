@@ -32,7 +32,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full mx-4 bg-orange-200 dark:bg-orange-800/[0.8] block rounded-3xl"
+                className="absolute inset-0 md:h-full w-full mx-4 bg-orange-200 dark:bg-orange-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -47,12 +47,12 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
 
-          <Card className="flex flex-row sm:flex-row items-center justify-between h-full w-full mx-4 flex-grow">
-            <div className="flex flex-col items-center sm:items-start">
+          <Card className="flex flex-row md:flex-col items-center md:h-full w-full mx-4 ">
               <CardTitle className="text-lg text-orange-500">{title}</CardTitle>
-              <CardDescription>{description}</CardDescription>
+            <div className="flex flex-row md:flex-col items-center w-3/4 md:w-full">
+              <CardDescription className='text-[1rem] md:w-full'>{description}</CardDescription>
+              <CardImageAnimation className="md:w-full w-1/4" animationData={animationData} />
             </div>
-            <CardImageAnimation className="w-full sm:w-1/2" animationData={animationData} />
           </Card>
         </Link>
       ))}
@@ -100,7 +100,7 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn('mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm', className)}>
+    <p className={cn('mt-4 text-zinc-400 tracking-tight leading-tight w-[50%] h-[50%]', className)}>
       {children}
     </p>
   );
@@ -117,7 +117,7 @@ export const CardImageAnimation = ({ animationData }) => {
   };
 
   return (
-    <div style={{ width: '100%', height: '200px' }}>
+    <div className='md:w-full md:h-[100%] h-[50%] w-[50%]'>
       <Lottie options={animationOptions} height={200} width={200} />
     </div>
   );
