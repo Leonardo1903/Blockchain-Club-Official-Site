@@ -1,4 +1,3 @@
-import React from "react";
 import { HoverEffect } from "./ui/card-hover-effect.tsx";
 import InnovationAnimationData from "../assets/InnovationAnimationData.json";
 import ImpactAnimationData from "../assets/ImpactAnimationData.json";
@@ -21,13 +20,13 @@ export function CardHoverEffectDemo() {
     {
       title: "03. Impact",
       description:
-        "We leverage blockchain for positive impact, enhancing transparency and promoting financial inclusion. Our initiatives drive meaningful change, utilizing blockchain as a catalyst for global improvement, thus creating a better world.",
+        "We leverage blockchain for positive impact, enhancing transparency and promoting financial inclusion. Our initiatives drive meaningful change, utilizing blockchain as a catalyst for global improvement.",
       animationData: ImpactAnimationData,
     },
   ];
 
   return (
-    <div className="min-h-screen h-auto max-w-5xl mx-auto px-1 md:px-3">
+    <div className="min-h-screen h-auto max-w-5xl mx-auto px-1 md:px-3 flex items-center ">
       <HoverEffect items={projects} />
     </div>
   );
