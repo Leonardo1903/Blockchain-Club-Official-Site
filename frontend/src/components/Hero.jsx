@@ -16,7 +16,6 @@ import { BackgroundBeamsDemo } from "./BackgroundBeams";
 import { CardHoverEffectDemo } from "./CardHoverEffect";
 import { PastEventsCards } from "./PastEvents";
 
-
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
 
 const Hero = () => {
@@ -54,7 +53,7 @@ const Hero = () => {
       >
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full md:w-[1182px] mx-auto space-y-4">
           <div className="w-full">
-            <TypewriterEffectSmoothDemo/>
+            <TypewriterEffectSmoothDemo />
             <p className="my-6 max-w-full md:mx-20 text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
               Empowering Innovators: Unleashing the Potential of Blockchain
             </p>
@@ -99,9 +98,8 @@ const Hero = () => {
       <GoogleGeminiEffectDemo />
       <BackgroundBeamsDemo component={CardHoverEffectDemo} />
       <section>
-      <PastEventsCards/>
+        <PastEventsCards />
       </section>
-      
     </>
   );
 };

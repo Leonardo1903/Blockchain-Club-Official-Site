@@ -63,9 +63,9 @@ function About() {
           }
         />
         {/* TEAM */}
-        <div className="flex flex-col md:flex-row justify-center items-center flex-wrap space-x-4 mx-auto md:w-[1182px] ">
+        <div className="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:flex-wrap md:space-x-4 mx-auto md:w-[1182px]">
           {/* First row */}
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0 w-full">
             {users.slice(0, 2).map((user) => (
               <ThreeDCardDemo
                 key={user.name}
@@ -77,7 +77,7 @@ function About() {
             ))}
           </div>
           {/* Second row */}
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0 w-full">
             {users.slice(2, 5).map((user) => (
               <ThreeDCardDemo
                 key={user.name}
@@ -89,7 +89,7 @@ function About() {
             ))}
           </div>
           {/* Third row */}
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0 w-full">
             {users.slice(5, 8).map((user) => (
               <ThreeDCardDemo
                 key={user.name}

@@ -14,19 +14,19 @@ export const projects = [
   {
     title: " 01. Empowerment",
     description:
-      "We empower members with the skills to navigate the blockchain landscape confidently. Through workshops, seminars, and projects, we foster leadership in the field. Join us to become a leader in blockchain technology.",
+      "Empowerment through workshops, seminars, and projects to cultivate leadership in blockchain technology.",
     animationData: MotiveAnimationData,
   },
   {
     title: "02. Innovation",
     description:
-      "We nurture creativity and exploration, inspiring members to challenge conventional thinking. Our environment encourages innovative solutions to real-world challenges, fostering groundbreaking advancements.",
+      "Fostering creativity and innovation through exploration, challenging conventional thinking, and generating groundbreaking advancements",
     animationData: InnovationAnimationData,
   },
   {
     title: "03. Impact",
     description:
-      "We leverage blockchain for positive impact, enhancing transparency and promoting financial inclusion. Our initiatives drive meaningful change, utilizing blockchain as a catalyst for global improvement, thus creating a better world.",
+      "Utilizing blockchain for positive impact by enhancing transparency, promoting financial inclusion, and driving meaningful global change . ",
     animationData: ImpactAnimationData,
   },
 ];
