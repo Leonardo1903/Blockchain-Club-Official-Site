@@ -14,8 +14,14 @@ export function SignupFormDemo() {
     if (firstname === "" || lastname === "" || email === "" || message === "" || phoneNumber === "") {
       alert("Please fill all the fields");
     }
+    // checking if the email is valid
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       alert("Please enter a valid email address");
+      return;
+    }
+    // checking if the phone number is valid
+    if (!/^[0-9]{10}$/.test(phoneNumber)) {
+      alert("Please enter a valid phone number");
       return;
     }
     const formData = new FormData();
