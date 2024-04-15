@@ -11,6 +11,13 @@ export function SignupFormDemo() {
   const [phoneNumber, setphoneNumber] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (firstname === "" || lastname === "" || email === "" || message === "" || phoneNumber === "") {
+      alert("Please fill all the fields");
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
     const formData = new FormData();
     formData.append("firstname", firstname);
     formData.append("lastname", lastname);
