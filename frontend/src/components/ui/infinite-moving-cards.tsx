@@ -85,7 +85,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[200px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[200px]"
+            className=" max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 "
             style={{
               background:
                 "linear-gradient(180deg, var(--red-500), var(--orange-500)",
@@ -98,7 +98,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <div className="w-full flex justify-center items-center ">
-              <img src={item.source} alt="Event Img" className="h-[15rem] rounded-xl" />
+              <img src={item.source} alt="Event Img" className="h-[15rem] md:h-[25rem]  rounded-xl" />
               </div>
               
       
