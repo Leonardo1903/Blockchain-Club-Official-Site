@@ -20,7 +20,7 @@ function Contact() {
         subheading={"We want to hear from you"}
       />
       <div className="bg-black">
-        <div className="mx-auto max-w-7xl px-4">
+        <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-7xl py-12 md:py-24">
             <div className="grid items-center justify-items-center gap-4 md:gap-8 lg:gap-x-4 lg:gap-y-10 lg:grid-cols-2 overflow-x-hidden">
               {/* contact from */}

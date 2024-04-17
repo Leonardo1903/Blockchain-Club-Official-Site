@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/final_logo.png";
-import vitLogo from "../assets/vitLogo.png"
+import vitLogo from "../assets/vitLogo.png";
 const menuItems = [
   {
     name: "Home",
@@ -51,7 +51,7 @@ function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span className="h-[10%]">
-            <img src={Logo} alt="Club Logo" className="h-[3.5rem]"/>
+            <img src={Logo} alt="Club Logo" className="h-[3.5rem]" />
           </span>
         </div>
         <div className="hidden lg:block">
@@ -60,7 +60,17 @@ function Navbar() {
               <li key={item.name}>
                 <NavLink
                   to={item.to}
-                  className="text-sm font-semibold text-gray-100 hover:text-orange-500"
+                  isActive={(match) => {
+                    if (!match) {
+                      return false;
+                    }
+                    return true;
+                  }}
+                  className={({ isActive }) =>
+                    `text-sm font-semibold text-gray-100 hover:text-orange-500 ${
+                      isActive ? "text-orange-500" : "text-gray-100"
+                    }`
+                  }
                 >
                   {item.name}
                 </NavLink>
@@ -69,7 +79,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="hidden lg:block">
-          <img src={vitLogo} alt="VIT Logo" className="h-[3rem]"/>
+          <img src={vitLogo} alt="VIT Logo" className="h-[3rem]" />
         </div>
         <div className="lg:hidden">
           <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
@@ -81,7 +91,7 @@ function Navbar() {
                 <div className="flex items-center justify-between">
                   <div className="inline-flex items-center space-x-2">
                     <span>
-                      <img src={Logo} alt="Club Logo" className="h-[2rem]"/>
+                      <img src={Logo} alt="Club Logo" className="h-[2rem]" />
                     </span>
                   </div>
                   <div className="-mr-2">
@@ -110,7 +120,11 @@ function Navbar() {
                     ))}
                   </nav>
                 </div>
-                <img src={vitLogo} alt="VIT Logo" className="h-[3rem] my-4 mx-auto" />
+                <img
+                  src={vitLogo}
+                  alt="VIT Logo"
+                  className="h-[3rem] my-4 mx-auto"
+                />
               </div>
             </div>
           </div>

@@ -11,7 +11,13 @@ export function SignupFormDemo() {
   const [phoneNumber, setphoneNumber] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (firstname === "" || lastname === "" || email === "" || message === "" || phoneNumber === "") {
+    if (
+      firstname === "" ||
+      lastname === "" ||
+      email === "" ||
+      message === "" ||
+      phoneNumber === ""
+    ) {
       alert("Please fill all the fields");
     }
     // checking if the email is valid
@@ -53,7 +59,7 @@ export function SignupFormDemo() {
       });
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8  shadow-input bg-white dark:bg-black">
       <form className="my-8">
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 mb-4">
           <LabelInputContainer>
@@ -139,7 +145,7 @@ const BottomGradient = () => {
 
 const LabelInputContainer = ({ children, className }) => {
   return (
-    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+    <div className={cn("flex flex-col space-y-4 w-full md:mx-2", className)}>
       {children}
     </div>
   );
