@@ -46,10 +46,10 @@ function Footer() {
                     Connect with Us
                   </p>
                   <span className="flex justify-center md:justify-start">
-                    <a href="https://www.linkedin.com/company/blockchain-club-vitb/">
+                    <a href="https://www.linkedin.com/company/blockchain-club-vitb/" target="_blank">
                       <FaLinkedin className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
                     </a>
-                    <a href="https://www.instagram.com/blockchain_club_vitb/">
+                    <a href="https://www.instagram.com/blockchain_club_vitb/" target="_blank">
                       <FaInstagram className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
                     </a>
                   </span>
