@@ -1,5 +1,10 @@
 import { ThreeDCardDemo } from "./3DCard.jsx";
 import { BackgroundBoxesDemo } from "./BackgroundBoxes.jsx";
+import Harsh from "../assets/PanelMembers/Harsh.jpeg"
+import Adi from "../assets/PanelMembers/Aditya.jpeg"
+import Ansh from "../assets/PanelMembers/Ansh.jpeg"
+import Shivangi from "../assets/PanelMembers/Shivangi.jpeg"
+
 const users = [
   {
     name: "Gabrielle Fernandez",
@@ -14,28 +19,25 @@ const users = [
     position: "Back-end developer",
   },
   {
-    name: "Gabrielle Fernandez",
-    image:
-      "https://images.unsplash.com/photo-1549351512-c5e12b11e283?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600",
-    position: "Sales",
+    name: "Ansh Porwal",
+    image: Ansh,
+    position: "President",
   },
   {
-    name: "Sadie Lewis",
+    name: "Siya Pareek",
     image:
       "https://images.unsplash.com/photo-1485960994840-902a67e187c8?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600",
-    position: "Sales",
+    position: "Vice President",
   },
   {
-    name: "Thilde Olaisen",
-    image:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&crop=faces&fit=crop&h=600&w=600",
-    position: "Marketing Lead",
+    name: "Harsh Balwani",
+    image: Harsh,
+    position: "Chairman",
   },
   {
-    name: "Deepika Ramesh",
-    image:
-      "https://images.generated.photos/lEhPUYYfYr9IOt13WZZGf2zbXZnCYdU1wUp7gcu_99c/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Njg5NTQ5LmpwZw.jpg",
-    position: "Front-end developer",
+    name: "Aditya Chaudhary",
+    image: Adi,
+    position: "Financial Head",
   },
   {
     name: "Jordi Santiago",
@@ -44,10 +46,9 @@ const users = [
     position: "Front-end developer",
   },
   {
-    name: "Kerim Fahri",
-    image:
-      "https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600",
-    position: "Back-end developer",
+    name: "Shivangi",
+    image: Shivangi,
+    position: "Secretary",
   },
 ];
 
