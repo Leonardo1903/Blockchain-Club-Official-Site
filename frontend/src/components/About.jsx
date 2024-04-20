@@ -1,22 +1,24 @@
 import { ThreeDCardDemo } from "./3DCard.jsx";
 import { BackgroundBoxesDemo } from "./BackgroundBoxes.jsx";
-import Harsh from "../assets/PanelMembers/Harsh.jpeg"
-import Adi from "../assets/PanelMembers/Aditya.jpeg"
-import Ansh from "../assets/PanelMembers/Ansh.jpeg"
-import Shivangi from "../assets/PanelMembers/Shivangi.jpeg"
+import Harsh from "../assets/PanelMembers/Harsh.png"
+import Adi from "../assets/PanelMembers/Aditya.png"
+import Ansh from "../assets/PanelMembers/Ansh.png"
+import Shivangi from "../assets/PanelMembers/Shivangi.png"
+import Siya from "../assets/PanelMembers/Siya.png";
+import NikhilSir from "../assets/PanelMembers/NikhilSir.png";
+import AnandSir from "../assets/PanelMembers/AnandSir.png";
+import Waris from "../assets/PanelMembers/Waris.png";
 
 const users = [
   {
-    name: "Gabrielle Fernandez",
-    image:
-      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-    position: "Marketing Lead",
+    name: "Dr. Anand Motwani",
+    image: AnandSir,
+    position: "Faculty Coordinator",
   },
   {
-    name: "Victória Silva",
-    image:
-      "https://images.generated.photos/vBRCiI_3UM4l40sU8s7fCwbJwzDwRTGpebzPkfHFsY4/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODgyMTAyLmpwZw.jpg",
-    position: "Back-end developer",
+    name: "Mr. Nikhil Pateria",
+    image: NikhilSir,
+    position: "Faculty Co-Coordinator",
   },
   {
     name: "Ansh Porwal",
@@ -25,8 +27,7 @@ const users = [
   },
   {
     name: "Siya Pareek",
-    image:
-      "https://images.unsplash.com/photo-1485960994840-902a67e187c8?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600",
+    image: Siya,
     position: "Vice President",
   },
   {
@@ -40,15 +41,14 @@ const users = [
     position: "Financial Head",
   },
   {
-    name: "Jordi Santiago",
-    image:
-      "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    position: "Front-end developer",
-  },
-  {
-    name: "Shivangi",
+    name: "Shivangi Choudhary",
     image: Shivangi,
     position: "Secretary",
+  },
+  {
+    name: "Waris Raza Ansari",
+    image: Waris,
+    position: "Joint Secretary",
   },
 ];
 

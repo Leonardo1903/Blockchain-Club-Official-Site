@@ -1,4 +1,19 @@
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards.tsx";
+import one from "../assets/Events/1.jpg";
+import two from "../assets/Events/2.jpg";
+import three from "../assets/Events/3.jpg";
+import four from "../assets/Events/4.jpg";
+import five from "../assets/Events/5.jpg";
+import six from "../assets/Events/6.jpg";
+import seven from "../assets/Events/7.jpg";
+import eight from "../assets/Events/8.jpg";
+import nine from "../assets/Events/9.jpg";
+import ten from "../assets/Events/10.jpg";
+import eleven from "../assets/Events/11.jpg";
+import twelve from "../assets/Events/12.jpg";
+import thirteen from "../assets/Events/13.jpg";
+import fourteen from "../assets/Events/14.jpg";
+import fifteen from "../assets/Events/15.jpg";
 
 export function PastEventsCards() {
   return (
@@ -17,23 +32,49 @@ export function PastEventsCards() {
 
 const testimonials = [
   {
-    source:
-      "https://images.pexels.com/photos/20726113/pexels-photo-20726113/free-photo-of-a-view-of-the-city-of-siena-italy.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=loading",
+    source: one,
   },
   {
-    source:
-      "https://images.pexels.com/photos/20726113/pexels-photo-20726113/free-photo-of-a-view-of-the-city-of-siena-italy.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=loading",
+    source: two,
   },
   {
-    source:
-      "https://images.pexels.com/photos/20726113/pexels-photo-20726113/free-photo-of-a-view-of-the-city-of-siena-italy.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=loading",
+    source: three,
   },
   {
-    source:
-      "https://images.pexels.com/photos/20726113/pexels-photo-20726113/free-photo-of-a-view-of-the-city-of-siena-italy.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=loading",
+    source: four,
   },
   {
-    source:
-      "https://images.pexels.com/photos/20726113/pexels-photo-20726113/free-photo-of-a-view-of-the-city-of-siena-italy.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=loading",
+    source: five,
   },
+  {
+    source: six,
+  },
+  {
+    source: seven,
+  },
+  {
+    source: eight,
+  },
+  {
+    source: nine,
+  },
+  {
+    source: ten,
+  },
+  {
+    source: eleven,
+  },
+  {
+    source: twelve,
+  },
+  {
+    source: thirteen,
+  },
+  {
+    source: fourteen,
+  },
+  {
+    source: fifteen,
+  },
+  
 ];
