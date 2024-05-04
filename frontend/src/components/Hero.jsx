@@ -1,6 +1,6 @@
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import Lottie from "react-lottie";
 import { TypewriterEffectSmoothDemo } from "./HeroTypewriter";
@@ -15,6 +15,8 @@ import { GoogleGeminiEffectDemo } from "./google-gemini-effect";
 import { BackgroundBeamsDemo } from "./BackgroundBeams";
 import { CardHoverEffectDemo } from "./CardHoverEffect";
 import { PastEventsCards } from "./PastEvents";
+import eventImg from "../assets/CryptoCarnival.jpg";
+import { AnimatePresence } from "framer-motion";
 
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
 
@@ -43,8 +45,33 @@ const Hero = () => {
     },
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
+       <AnimatePresence>
+        {isModalOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed z-50 left-0 top-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 "
+          >
+            <div className="relative bg-white rounded-lg p-6">
+              <button onClick={closeModal} className="absolute top-2 right-2">
+              &#x274C;
+              </button>
+              <a href="https://forms.gle/CxV51K1SzXiQCzKg9" target="_blank">
+                <img src={eventImg} alt="Event" className="h-[45rem] w-full"/>
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <motion.section
         style={{
           backgroundImage,
