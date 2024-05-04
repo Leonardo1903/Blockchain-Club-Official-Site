@@ -66,7 +66,7 @@ const Hero = () => {
               &#x274C;
               </button>
               <a href="https://forms.gle/CxV51K1SzXiQCzKg9" target="_blank">
-                <img src={eventImg} alt="Event" className="h-[45rem] w-full"/>
+                <img src={eventImg} alt="Event" className=" h-[25rem] md:h-[45rem] w-full"/>
               </a>
             </div>
           </motion.div>
