@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <>
-       <AnimatePresence>
+       {/* <AnimatePresence>
         {isModalOpen && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -71,7 +71,7 @@ const Hero = () => {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <motion.section
         style={{
           backgroundImage,
@@ -95,6 +95,10 @@ const Hero = () => {
               whileTap={{
                 scale: 0.985,
               }}
+              onClick={() => {
+                window.open("https://forms.gle/CxV51K1SzXiQCzKg9", "_blank");
+              }
+            }
               className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 mx-auto"
             >
               Join Us!
