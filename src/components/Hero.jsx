@@ -96,7 +96,7 @@ const Hero = () => {
                 scale: 0.985,
               }}
               onClick={() => {
-                window.open("https://forms.gle/CxV51K1SzXiQCzKg9", "_blank");
+                window.open("https://dub.sh/blockchain-club", "_blank");
               }
             }
               className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 mx-auto"
