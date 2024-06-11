@@ -1,4 +1,4 @@
-import Logo from "../assets/final_logo.png";
+import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaInstagram } from "react-icons/fa6";
 
@@ -46,10 +46,16 @@ function Footer() {
                     Connect with Us
                   </p>
                   <span className="flex justify-center md:justify-start">
-                    <a href="https://www.linkedin.com/company/blockchain-club-vitb/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/company/blockchain-club-vitb/"
+                      target="_blank"
+                    >
                       <FaLinkedin className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
                     </a>
-                    <a href="https://www.instagram.com/blockchain_club_vitb/" target="_blank">
+                    <a
+                      href="https://www.instagram.com/blockchain_club_vitb/"
+                      target="_blank"
+                    >
                       <FaInstagram className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
                     </a>
                   </span>

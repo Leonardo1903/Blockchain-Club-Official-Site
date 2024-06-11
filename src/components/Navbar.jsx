@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/final_logo.png";
+import Logo from "../assets/logo.png";
 import vitLogo from "../assets/vitLogo.png";
 const menuItems = [
   {
