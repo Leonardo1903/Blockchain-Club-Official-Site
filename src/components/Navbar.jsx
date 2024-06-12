@@ -16,6 +16,10 @@ const menuItems = [
     name: "Contact",
     to: "/contact",
   },
+  {
+    name: "Blogs",
+    to: "/blog"
+  }
 ];
 
 function Navbar() {
