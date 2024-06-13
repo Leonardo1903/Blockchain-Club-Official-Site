@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogPost() {
   return (
-    <div>BlogPost</div>
+    <div className='bg-white'>BlogPost</div>
   )
 }
 
