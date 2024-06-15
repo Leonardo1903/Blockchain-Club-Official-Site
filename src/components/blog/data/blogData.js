@@ -2,24 +2,57 @@
 const blogData = [
     {
       id: 1,
-      title: 'Latest Blog Post',
+      title: 'AI ABC',
       thumbnail:'./thumbnail.webp',
       subtitle: 'This is the latest blog post subtitle.',
-      body: 'This is the body of the latest blog post.'
+      body: 'This is the body of the latest blog post.',
+      date: '9 June',
+      readTime:' 5 Minute Read'
     },
     {
       id: 2,
-      title: 'Recent Blog Post 1',
+      title: 'ML ABC',
       thumbnail:'./thumbnail.webp',
       subtitle: 'This is a recent blog post subtitle.',
-      body: 'This is the body of a recent blog post.'
+      body: 'This is the body of a recent blog post.',
+      date: '9 June',
+      readTime:' 5 Minute Read'
     },
     {
       id: 3,
-      title: 'Recent Blog Post 2',
+      title: 'BLOCKCHAIN ABC',
       thumbnail:'./thumbnail.webp',
       subtitle: 'This is another recent blog post subtitle.',
-      body: 'This is the body of another recent blog post.'
+      body: 'This is the body of another recent blog post.',
+      date: '9 June',
+      readTime:' 5 Minute Read'
+    },
+    {
+      id: 4,
+      title: 'AI ABC',
+      thumbnail:'./thumbnail.webp',
+      subtitle: 'This is the latest blog post subtitle.',
+      body: 'This is the body of the latest blog post.',
+      date: '9 June',
+      readTime:' 5 Minute Read'
+    },
+    {
+      id: 5,
+      title: 'ML ABC',
+      thumbnail:'./thumbnail.webp',
+      subtitle: 'This is a recent blog post subtitle.',
+      body: 'This is the body of a recent blog post.',
+      date: '9 June',
+      readTime:' 5 Minute Read'
+    },
+    {
+      id: 6,
+      title: 'BLOCKCHAIN ABC',
+      thumbnail:'./thumbnail.webp',
+      subtitle: 'This is another recent blog post subtitle.',
+      body: 'This is the body of another recent blog post.',
+      date: '9 June',
+      readTime:' 5 Minute Read'
     }
     // Add more blog posts as needed
   ];
