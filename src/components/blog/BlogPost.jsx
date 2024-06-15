@@ -48,7 +48,7 @@ function BlogPost() {
       <div className="sample-header h-full relative bg-cover bg-center bg-no-repeat" style = {{ backgroundImage: `url(${blog.cover})`}}>
         <div className="sample-header-section h-full relative py-36 max-w-4xl  mx-auto text-center text-white" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.5)' }}>
         <h1 className="text-4xl font-semibold">{blog.title}</h1>
-          <h2 className="text-2xl font-normal">Impact of Blockchain Technology on Everyday Life and Financial Sector</h2>
+          <h2 className="text-2xl font-normal">{blog.subtitle}</h2>
         </div>
       </div>
       <div className="sample-section-wrap relative bg-white dark:bg-black">
@@ -62,7 +62,7 @@ function BlogPost() {
             {parse(blog.body)}
           </div>
           <footer className='text-right border-t mt-4 pt-4'>
-            <p>Credit: <a href="https://mor10.com/wordpress-the-15-year-revolution/" className='text-blue-500 dark:text-blue-400'>Mor10.com</a></p>
+            <p>Credit: <a href="/about" className='text-blue-500 dark:text-blue-400'>BlockChain Club Content Team</a></p>
           </footer>
         </div>
       </div>
