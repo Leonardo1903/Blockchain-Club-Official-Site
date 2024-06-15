@@ -47,11 +47,7 @@ function BlogHome() {
                navigation={true}
                modules={[Autoplay,Pagination, Navigation]}
                 >
-                    {/* id: 1,
-                        title: 'AI ABC',
-                        thumbnail:'./thumbnail.webp',
-                        subtitle: 'This is the latest blog post subtitle.',
-                        body: 'This is the body of the latest blog post.' */}
+                    
             
                 
                 {latestBlog.map((blog)=>{
@@ -59,7 +55,7 @@ function BlogHome() {
                         <div className='m-4 p-4' key={blog.id}>                       
                         <SwiperSlide className=' bg-amber-400' key={blog.id}>
                             <NavLink to={`/blog/${blog.id}`}>
-                            <div id='background-image' className="flex flex-col" style={{backgroundImage: `url('./sample.png')`,backgroundSize:'cover'}}>
+                            <div id='background-image' className="flex flex-col" style={{backgroundImage: `url(${blog.cover})`,backgroundSize:'cover'}}>
                                 <div id='empty-space' className='h-80'>
                                     
                                 </div>
