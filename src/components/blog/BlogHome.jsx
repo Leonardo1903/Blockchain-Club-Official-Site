@@ -91,7 +91,7 @@ function BlogHome() {
                     <div className='flex flex-wrap '>
                         {recentBlogs.map(blog => (
                                 <div id='card' className='bg-gray-800 rounded m-x-fit m-4 p-4 ' key={blog.id}>
-                                    <img src="./sample.png" alt="Thumbnail" />
+                                    <img src={blog.thumbnail} alt="Thumbnail" />
                                     <div id='content' className='flex backdrop-blur-sm flex-col mx-2 my-4'>
                                     <div id='title' className='text-2xl text-white p-0.5'> {blog.title} </div>
                                     <div id='subtitle' className='text-xl text-white px-0.5 pb-1'>{blog.subtitle}</div>
