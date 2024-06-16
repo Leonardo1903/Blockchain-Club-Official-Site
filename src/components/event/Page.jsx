@@ -1,13 +1,12 @@
-import React from "react";
-import pic3 from "../EvAssets/Crypto Carnival 2.jpeg";
-import pic4 from "../EvAssets/Crypto Carnival 3.jpeg";
-import pic5 from "../EvAssets/Crypto Carnival 4.jpeg";
-import pic6 from "../EvAssets/Crypto Carnival 5.jpeg";
-import pic7 from "../EvAssets/Crypto Carnival 6.jpeg";
-import pic8 from "../EvAssets/Crypto Carnival 7.jpeg";
-import pic9 from "../EvAssets/Crypto Carnival 8.jpeg";
-import pic10 from "../EvAssets/Crypto Carnival 9.jpeg";
-import pic11 from "../EvAssets/Crypto Carnival 10.jpeg";
+import pic3 from "../../assets/EvAssets/Crypto Carnival 2.jpeg";
+import pic4 from "../../assets/EvAssets/Crypto Carnival 3.jpeg";
+import pic5 from "../../assets/EvAssets/Crypto Carnival 4.jpeg";
+import pic6 from "../../assets/EvAssets/Crypto Carnival 5.jpeg";
+import pic7 from "../../assets/EvAssets/Crypto Carnival 6.jpeg";
+import pic8 from "../../assets/EvAssets/Crypto Carnival 7.jpeg";
+import pic9 from "../../assets/EvAssets/Crypto Carnival 8.jpeg";
+import pic10 from "../../assets/EvAssets/Crypto Carnival 9.jpeg";
+import pic11 from "../../assets/EvAssets/Crypto Carnival 10.jpeg";
 
 function Page() {
   return (

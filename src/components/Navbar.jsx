@@ -13,17 +13,16 @@ const menuItems = [
     to: "/about",
   },
   {
-    name: "Contact",
-    to: "/contact",
+    name: "Blogs",
+    to: "/blog",
   },
   {
-
     name: "Events",
     to: "/events",
   },
   {
-        name: "Blogs",
-    to: "/blog"
+    name: "Contact",
+    to: "/contact",
   },
 ];
 
@@ -69,15 +68,9 @@ function Navbar() {
               <li key={item.name}>
                 <NavLink
                   to={item.to}
-                  isactive={(match) => {
-                    if (!match) {
-                      return false;
-                    }
-                    return true;
-                  }}
-                  className={({ isactive }) =>
-                    `text-sm font-semibold text-gray-100 hover:text-orange-500 ${
-                      isactive ? "text-orange-500" : "text-gray-100"
+                  className={({ isActive }) =>
+                    `text-sm font-semibold hover:text-orange-500 ${
+                      isActive ? "text-orange-500" : "text-gray-100"
                     }`
                   }
                 >
@@ -120,9 +113,13 @@ function Navbar() {
                       <NavLink
                         key={item.name}
                         to={item.to}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold"
+                        className={({ isActive }) =>
+                          `-m-3 flex items-center rounded-md p-3 text-sm font-semibold ${
+                            isActive ? "text-orange-500" : "text-gray-100"
+                          }`
+                        }
                       >
-                        <span className="ml-3 text-base font-medium text-white">
+                        <span className="ml-3 text-base font-medium">
                           {item.name}
                         </span>
                       </NavLink>
