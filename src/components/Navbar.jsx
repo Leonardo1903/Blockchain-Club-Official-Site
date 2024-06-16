@@ -17,9 +17,14 @@ const menuItems = [
     to: "/contact",
   },
   {
+
     name: "Events",
     to: "/events",
-  }
+  },
+  {
+        name: "Blogs",
+    to: "/blog"
+  },
 ];
 
 function Navbar() {
@@ -64,15 +69,15 @@ function Navbar() {
               <li key={item.name}>
                 <NavLink
                   to={item.to}
-                  isActive={(match) => {
+                  isactive={(match) => {
                     if (!match) {
                       return false;
                     }
                     return true;
                   }}
-                  className={({ isActive }) =>
+                  className={({ isactive }) =>
                     `text-sm font-semibold text-gray-100 hover:text-orange-500 ${
-                      isActive ? "text-orange-500" : "text-gray-100"
+                      isactive ? "text-orange-500" : "text-gray-100"
                     }`
                   }
                 >

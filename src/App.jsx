@@ -12,6 +12,8 @@ import Page3 from "./components/event/Page3";
 import Page4 from "./components/event/Page4";
 import Page from "./components/event/Page";
 import Layout from "./Layout";
+import BlogHome from "./components/blog/BlogHome";
+import BlogPost from "./components/blog/BlogPost";
 
 function App() {
   const router = createBrowserRouter(
@@ -26,6 +28,9 @@ function App() {
         <Route path="/page4" element={<Page3 />} />
         <Route path="/page5" element={<Page4 />} />
         <Route path="/page" element={<Page />} />
+        <Route path="/contact" element={<Contact />} />    
+        <Route exact path="/blog" element={<BlogHome />} />    
+        <Route path="/blog/:id" element={<BlogPost />} />    
       </Route>
     )
   );
