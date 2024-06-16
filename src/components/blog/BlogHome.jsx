@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { BackgroundBoxesDemo } from "../BackgroundBoxes";
-import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import blogData from "./data/blogData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,20 +17,14 @@ function BlogHome() {
     setLatestBlog([blogData[0], blogData[1], blogData[2]]);
     setRecentBlogs(blogData.slice(0));
   }, []);
+
   return (
     <div className="bg-gray-950">
-      <Helmet>
-        <title>Blog</title>
-        <meta
-          name="description"
-          content="Read the latest and recent blogs on our site."
-        />
-      </Helmet>
       <BackgroundBoxesDemo
         heading={"OUR BLOG"}
         subheading={"Read the latest and recent blogs on our site."}
       />
-      <div id="swiper" className="m-4 p-4 w-7/12 mx-auto mt-12 ">
+      <div id="swiper" className="m-4 p-4 md:w-7/12 mx-auto mt-12">
         <Swiper
           spaceBetween={30}
           style={{
@@ -40,7 +33,7 @@ function BlogHome() {
           }}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 7500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -49,86 +42,92 @@ function BlogHome() {
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
         >
-          {latestBlog.map((blog) => {
-            return (
-              <div className="m-4 p-4" key={blog.id}>
-                <SwiperSlide className=" bg-amber-400" key={blog.id}>
-                  <NavLink to={`/blog/${blog.id}`}>
-                    <div
-                      id="background-image"
-                      className="flex flex-col"
-                      style={{
-                        backgroundImage: `url(${blog.cover})`,
-                        backgroundSize: "cover",
-                      }}
-                    >
-                      <div id="empty-space" className="h-80"></div>
-                      <div id="content blur" className="text-white">
+          {latestBlog.map((blog) => (
+            <div className="m-4 p-4" key={blog.id}>
+              <SwiperSlide className="bg-amber-400" key={blog.id}>
+                <NavLink to={`/blog/${blog.id}`}>
+                  <div
+                    id="background-image"
+                    className="flex flex-col"
+                    style={{
+                      backgroundImage: `url(${blog.cover})`,
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    <div id="empty-space" className="h-80"></div>
+                    <div id="content blur" className="text-white">
+                      <div
+                        id="content"
+                        className="flex backdrop-blur-sm flex-col mx-2 my-4"
+                      >
+                        <div id="title" className="text-xl md:text-4xl p-0.5">
+                          {blog.title}
+                        </div>
                         <div
-                          id="content"
-                          className="flex backdrop-blur-sm flex-col mx-2 my-4"
+                          id="subtitle"
+                          className="text-lg md:text-2xl px-0.5 pb-1"
                         >
-                          <div
-                            id="title"
-                            className="text-2xl md:text-4xl p-0.5"
-                          >
-                            {" "}
-                            {blog.title}{" "}
-                          </div>
-                          <div
-                            id="subtitle"
-                            className="text-xl md:text-2xl px-0.5 pb-1"
-                          >
-                            {blog.subtitle}
-                          </div>
-                          <div id="footer" className="px-0.5">
-                            <div className="flex md:text-xl">
-                              <div id="date" className="">
-                                9 June,{" "}
-                              </div>{" "}
-                              <div id="time-read" className="">
-                                5-minute read
-                              </div>
+                          {blog.subtitle}
+                        </div>
+                        <div id="footer" className="px-0.5">
+                          <div className="flex md:text-xl">
+                            <div id="date" className="">
+                              9 June,
+                            </div>
+                            <div id="time-read" className="">
+                              5-minute read
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </NavLink>
-                </SwiperSlide>
-              </div>
-            );
-          })}
+                  </div>
+                </NavLink>
+              </SwiperSlide>
+            </div>
+          ))}
         </Swiper>
       </div>
       <div id="blog-list" className="m-8 p-8">
-        <div id="title" className="p-4 my-4 text-5xl text-amber-400">
+        <div
+          id="title"
+          className="p-4 my-4 text-3xl md:text-5xl text-amber-400"
+        >
           Hot Articles
         </div>
-        <div className="flex flex-wrap ">
+        <div className="flex flex-wrap">
           {recentBlogs.map((blog) => (
             <div
               id="card"
-              className="bg-gray-800 rounded m-x-fit m-4 p-4 "
+              className="bg-gray-800 rounded m-x-fit m-4 p-4 w-full md:w-auto"
               key={blog.id}
             >
-              <img src={blog.thumbnail} alt="Thumbnail" />
+              <img
+                src={blog.thumbnail}
+                alt="Thumbnail"
+                className="w-full h-80 object-cover rounded-lg"
+              />
               <div
                 id="content"
                 className="flex backdrop-blur-sm flex-col mx-2 my-4"
               >
-                <div id="title" className="text-2xl text-white p-0.5">
-                  {" "}
-                  {blog.title}{" "}
+                <div
+                  id="title"
+                  className="text-xl md:text-2xl text-white p-0.5"
+                >
+                  {blog.title}
                 </div>
-                <div id="subtitle" className="text-xl text-white px-0.5 pb-1">
+                <div
+                  id="subtitle"
+                  className="text-lg md:text-xl text-white px-0.5 pb-1"
+                >
                   {blog.subtitle}
                 </div>
                 <div id="footer" className="px-0.5 text-amber-400">
                   <div className="flex md:text-xl">
                     <div id="date" className="">
-                      9 June,{" "}
-                    </div>{" "}
+                      9 June,&nbsp;
+                    </div>
                     <div id="time-read" className="">
                       5-minute read
                     </div>
@@ -144,19 +143,6 @@ function BlogHome() {
           ))}
         </div>
       </div>
-
-      {/* {
-            latestBlog &&
-            (
-                <div>
-                    <h1>{latestBlog.title}</h1>
-                    <h2>{latestBlog.subtitle}</h2>
-                    <img src={latestBlog.thumbnail} alt="" />
-                    <NavLink to={`/blog/${latestBlog.id}`}>Read More...</NavLink>
-                </div>
-            )
-
-        } */}
     </div>
   );
 }
