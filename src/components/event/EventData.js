@@ -16,9 +16,9 @@ import {
 const EventData = () => [
   {
     id: 1,
-    Name: "-O-Mania",
-    Date: "28th Aug 2023",
-    Images: [
+    name: "-O-Mania",
+    date: "28th Aug 2023",
+    images: [
       Image1,
       Image2,
       Image3,
@@ -35,9 +35,9 @@ const EventData = () => [
   },
   {
     id: 2,
-    Name: "Ideathon'24",
-    Date: "23rd Feb 2024",
-    Images: [
+    name: "Ideathon'24",
+    date: "23rd Feb 2024",
+    images: [
       Image2,
       Image1,
       Image3,
@@ -54,9 +54,9 @@ const EventData = () => [
   },
   {
     id: 3,
-    Name: "CryptoCarnival",
-    Date: "10th May 2024",
-    Images: [
+    name: "CryptoCarnival",
+    date: "10th May 2024",
+    images: [
       Image1,
       Image2,
       Image3,

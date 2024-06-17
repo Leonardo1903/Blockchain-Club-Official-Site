@@ -25,19 +25,19 @@ function EventImages() {
     <div className="bg-black text-white min-h-screen flex flex-col items-center p-4">
       <h1 className="text-3xl pb-10">{event.Name}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
-        {event.Images.map((image, index) => (
+        {event.images.map((image, index) => (
           <div
             className="relative border-4 border-black cursor-pointer"
             key={index}
           >
-            <div className="border-4 border-yellow-400">
+            <div className="border-4 border-orange-500">
               <img
                 src={image}
                 alt={`Event Image ${index + 1}`}
                 className="w-full object-cover"
               />
             </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-yellow-400 p-1"></div>
+            <div className="absolute bottom-0 left-0 right-0 bg-orange-500 p-1"></div>
           </div>
         ))}
       </div>

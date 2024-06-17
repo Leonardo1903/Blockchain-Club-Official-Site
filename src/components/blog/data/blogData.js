@@ -1,13 +1,17 @@
 // src/data/blogData.js
 const blogData = [
-    {
-      id: 1,
-      title: 'Adoption of blockchain technology in India’s financial sector',
-      thumbnail:'https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg',
-      cover:"https://www.telefonica.com/en/wp-content/uploads/sites/5/2022/06/Imagen1.jpg?w=1224&h=673&crop=1",
-      subtitle: 'Impact of Blockchain Technology on Financial Sector',
-      author: 'Lavi Perchik',
-      body: `
+  {
+    id: 1,
+    title: "Adoption of blockchain technology in India’s financial sector",
+    subtitle: "Impact of Blockchain Technology on Financial Sector",
+    author: "Lavi Perchik",
+    date: "9 June",
+    readTime: " 5 Minute Read",
+    thumbnail:
+      "https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg",
+    cover:
+      "https://www.telefonica.com/en/wp-content/uploads/sites/5/2022/06/Imagen1.jpg?w=1224&h=673&crop=1",
+    body: `
       <p class="mb-2">Our everyday lives are being impacted by modern technology, from giving commands with voice notes to controlling devices with a remote. Blockchain technology is widely utilized in banking, digital asset trading, and other industries because of its decentralized, enforceable, and sharing characteristics. In fintech research, blockchain has become a hot topic that is impacting how traditional financial forms are evolving. It is considered the digital economy's cornerstone. A data structure that maintains transactional records and, by guaranteeing security, transparency, and decentralization, removes the chance of fraudulent activity or transaction replication without the involvement of a third party is known as blockchain technology.</p>
       <h1 class="text-2xl font-bold mb-4">Impact of Blockchain Technology on Everyday Life and Financial Sector</h1>
 
@@ -25,17 +29,20 @@ const blogData = [
 
       <p class="mb-2">Blockchain technology has many advantages, but it also has few drawbacks. It still has to be developed and faces several challenges, such as those related to scalability, security, and privacy. The possible advantages of blockchain technology significantly exceed the hazards, notwithstanding these difficulties. Blockchain has the potential to completely transform India's financial industry with the correct laws and technology developments.</p>
       `,
-      date: '9 June',
-      readTime:' 5 Minute Read'
-    },
-    {
-      id: 2,
-      title: 'The Future of Blockchain: Emerging Trends and Predictions',
-      thumbnail:'https://images.pexels.com/photos/5980921/pexels-photo-5980921.jpeg?auto=compress&cs=tinysrgb&w=600',
-      cover:"https://images.unsplash.com/photo-1530333821974-f9fcfd6718c8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      subtitle: 'send money to anyone, anywhere, without a bank acting as the mediator.',
-      author: 'Ishan Rai',
-      body: `<h1 class="text-2xl font-bold mb-4">Imagine a world where you can shoot money to anyone, anywhere, without a bank acting as the mediator</h1>
+  },
+  {
+    id: 2,
+    title: "The Future of Blockchain: Emerging Trends and Predictions",
+    subtitle:
+      "Send money to anyone, anywhere, without a bank acting as the mediator.",
+    author: "Ishan Rai",
+    date: "11 June",
+    readTime: " 6 Minute Read",
+    thumbnail:
+      "https://images.pexels.com/photos/5980921/pexels-photo-5980921.jpeg?auto=compress&cs=tinysrgb&w=600",
+    cover:
+      "https://images.unsplash.com/photo-1530333821974-f9fcfd6718c8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    body: `<h1 class="text-2xl font-bold mb-4">Imagine a world where you can shoot money to anyone, anywhere, without a bank acting as the mediator</h1>
               <p class="mb-2">Or a world where all your medical records are stored securely and you control who has access to them. This isn't a distant future, but a reality being shaped by blockchain technology.</p>
 
               <h1 class="text-2xl font-bold mb-4">Blockchain Beyond Financial Transactions</h1>
@@ -80,17 +87,19 @@ const blogData = [
               and take notice of the blockchain revolution that is underway. It's not just about
               cryptocurrencies anymore – it's about creating a more transparent, secure, and efficient future
               for all of us.</p>`,
-      date: '11 June',
-      readTime:' 6 Minute Read'
-    },
-    {
-      id: 3,
-      title: 'Blockchain Career Opportunities: The Future of Work',
-      thumbnail:'https://images.unsplash.com/photo-1630048421806-adaffaf3f44a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8',
-      cover:"https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      subtitle: 'plethora of career opportunities',
-      author: 'Sagnik Sahoo',
-      body: `<h1 class="text-2xl font-bold mb-4">The rapid evolution of blockchain technology is transforming various industries and opening up a plethora of career opportunities</h1>
+  },
+  {
+    id: 3,
+    title: "Blockchain Career Opportunities: The Future of Work",
+    subtitle: "Plethora of career opportunities",
+    author: "Sagnik Sahoo",
+    date: "8 June",
+    readTime: " 9 Minute Read",
+    thumbnail:
+      "https://images.unsplash.com/photo-1630048421806-adaffaf3f44a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8",
+    cover:
+      "https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    body: `<h1 class="text-2xl font-bold mb-4">The rapid evolution of blockchain technology is transforming various industries and opening up a plethora of career opportunities</h1>
               <p class="mb-2">Originally conceived as the underlying technology for Bitcoin, blockchain has grown far beyond its initial scope, influencing sectors such as finance, healthcare, supply chain, and even government operations. The demand for blockchain professionals is surging, making it one of the most promising career paths in the digital age.</p>
 
               <h1 class="text-2xl font-bold mb-4">Understanding Blockchain Technology</h1>
@@ -134,17 +143,19 @@ const blogData = [
               <p class="mb-2">In conclusion, blockchain technology is not just a passing trend but a fundamental shift in how we manage and secure data. For those willing to invest in learning and adapting to this technology, the career opportunities are vast and varied. As industries continue to recognize the value of blockchain, professionals in this field will play a critical role in shaping the future of technology and business.</p>
 
 `,
-      date: '8 June',
-      readTime:' 9 Minute Read'
-    },
-    {
-      id: 4,
-      title: 'The Evolution of Blockchain Technology',
-      thumbnail:'https://plus.unsplash.com/premium_photo-1663931932505-439ad82a2ef6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D ',
-      cover:"https://images.unsplash.com/photo-1530333821974-f9fcfd6718c8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      subtitle: 'From Bitcoin to Decentralized Finance',
-      author: 'Rishab',
-      body: `<h1 class="text-2xl font-bold mb-4">Blockchain technology, first conceptualized in 2008 as the backbone of Bitcoin, has since evolved into a transformative force far beyond its initial scope</h1>
+  },
+  {
+    id: 4,
+    title: "The Evolution of Blockchain Technology",
+    subtitle: "From Bitcoin to Decentralized Finance",
+    author: "Rishab",
+    date: "7 June",
+    readTime: " 10 Minute Read",
+    thumbnail:
+      "https://plus.unsplash.com/premium_photo-1663931932505-439ad82a2ef6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D ",
+    cover:
+      "https://images.unsplash.com/photo-1530333821974-f9fcfd6718c8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    body: `<h1 class="text-2xl font-bold mb-4">Blockchain technology, first conceptualized in 2008 as the backbone of Bitcoin, has since evolved into a transformative force far beyond its initial scope</h1>
       <p class="mb-2">Its journey from powering the world’s first cryptocurrency to becoming the foundation of decentralized finance (DeFi) is a testament to its revolutionary potential and adaptability. This evolution highlights blockchain's expanding role in creating more transparent, secure, and decentralized financial systems.</p>
 
       <h1 class="text-2xl font-bold mb-4">Bitcoin: The Genesis of Blockchain</h1>
@@ -185,18 +196,20 @@ const blogData = [
       <h1 class="text-2xl font-bold mb-4">Conclusion</h1>
               <p class="mb-2">The evolution of blockchain technology from Bitcoin to decentralized finance has been marked by continuous innovation and expanding applications. Bitcoin introduced a revolutionary way to conduct secure, decentralized transactions. Ethereum built on this foundation with smart contracts, enabling a myriad of decentralized applications. Today, DeFi represents the pinnacle of blockchain's potential to transform traditional financial systems, offering a more inclusive, transparent, and efficient financial ecosystem. As blockchain technology continues to evolve, it holds the promise of driving even more profound changes in the way we interact with financial systems and beyond.</p>         
 `,
-      date: '7 June',
-      readTime:' 10 Minute Read'
-    },
-    {
-      id: 5,
-      title: 'Role of Blockchain Technology in Enhancing Cybersecurity',
-      thumbnail:'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600 ',
-      cover:"https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      
-      subtitle: 'How blockchain improves Cybersecurity',
-      author:'Piyush',
-      body: `
+  },
+  {
+    id: 5,
+    title: "Role of Blockchain Technology in Enhancing Cybersecurity",
+    subtitle: "How blockchain improves Cybersecurity",
+    author: "Piyush",
+    date: "8 June",
+    readTime: " 5 Minute Read",
+    thumbnail:
+      "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600 ",
+    cover:
+      "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    body: `
       <h1 class="text-2xl font-bold mb-4">Role of Blockchain Technology in Enhancing Cybersecurity</h1>
             <p class="mb-2">Renowned for its function in cryptocurrencies, blockchain technology has become a potent instrument for augmenting cybersecurity in a multitude of sectors. There are strong procedures for safeguarding data and transactions because of its decentralized, transparent, and unchangeable nature.
 Today, both people and businesses have serious concerns about cybersecurity. There's an urgent need for stronger security measures since cyber-attacks are become more sophisticated. The way we safeguard our digital assets and data is changing due to the revolutionary approach of blockchain technology, which is revolutionizing cyber protection. The potential uses of blockchain in data protection and safe transactions will be discussed in this blog post, along with ways in which it might improve cybersecurity.
@@ -218,17 +231,20 @@ Today, both people and businesses have serious concerns about cybersecurity. The
             <p class="mb-2">Blockchain technology may be essential to building a more secure digital future. We can anticipate additional creative applications of the technology as it advances, which will improve cybersecurity across a range of sectors.
 </p>
 `,
-      date: '8 June',
-      readTime:' 5 Minute Read'
-    },
-    {
-      id: 6,
-      title: 'Blockchain Integration with Traditional Finance',
-      thumbnail:'https://images.pexels.com/photos/351264/pexels-photo-351264.jpeg?auto=compress&cs=tinysrgb&w=600',
-      cover:"https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600",
-      subtitle: 'Read about paradigm shift which has been brough by blockchain technology',
-      author: 'Dinesh',
-      body: `<h1 class="text-2xl font-bold mb-4">The advent of blockchain technology has brought a paradigm shift in various sectors, with traditional finance being one of the most affected. Blockchain's promise of enhanced transparency, security, and efficiency has led to its increasing integration with traditional financial systems. This integration is poised to revolutionize how financial services are delivered, offering new opportunities and addressing long-standing inefficiencies in the sector.</h1>
+  },
+  {
+    id: 6,
+    title: "Blockchain Integration with Traditional Finance",
+    subtitle:
+      "Read about paradigm shift which has been brough by blockchain technology",
+    author: "Dinesh",
+    date: "11 June",
+    readTime: " 9 Minute Read",
+    thumbnail:
+      "https://images.pexels.com/photos/351264/pexels-photo-351264.jpeg?auto=compress&cs=tinysrgb&w=600",
+    cover:
+      "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600",
+    body: `<h1 class="text-2xl font-bold mb-4">The advent of blockchain technology has brought a paradigm shift in various sectors, with traditional finance being one of the most affected. Blockchain's promise of enhanced transparency, security, and efficiency has led to its increasing integration with traditional financial systems. This integration is poised to revolutionize how financial services are delivered, offering new opportunities and addressing long-standing inefficiencies in the sector.</h1>
 
 <h2 class="text-xl font-bold mb-2">Enhancing Transparency and Security</h2>
 <p class="mb-2">One of the primary advantages of blockchain integration in finance is the increased transparency and security it offers. Traditional financial systems often rely on centralized databases, which are vulnerable to hacking and fraud. Blockchain's decentralized nature ensures that no single entity controls the entire network, making it highly resistant to tampering and cyberattacks. Each transaction is cryptographically secured and visible to all participants, fostering trust and accountability.</p>
@@ -257,10 +273,8 @@ Today, both people and businesses have serious concerns about cybersecurity. The
 
 <h2 class="text-xl font-bold mb-2">Conclusion</h2>
 <p class="mb-2">Blockchain integration with traditional finance is more than just a technological upgrade; it is a fundamental transformation of the financial landscape. By enhancing transparency, security, and efficiency, blockchain has the potential to address many of the inefficiencies plaguing traditional financial systems. As the technology matures and regulatory frameworks evolve, the synergy between blockchain and traditional finance is likely to grow stronger, paving the way for a more inclusive, efficient, and secure financial future.</p>`,
-      date: '11 June',
-      readTime:' 9 Minute Read'
-    }
-    // Add more blog posts as needed
-  ];
-  
-  export default blogData;
+  },
+  // Add more blog posts as needed
+];
+
+export default blogData;
