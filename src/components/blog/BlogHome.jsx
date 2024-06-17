@@ -24,7 +24,7 @@ function BlogHome() {
         heading={"OUR BLOG"}
         subheading={"Read the latest and recent blogs on our site."}
       />
-      <div id="swiper" className="m-4 p-4 md:w-7/12 mx-auto mt-12">
+      <div className="m-4 p-4 md:w-7/12 mx-auto mt-12">
         <Swiper
           spaceBetween={30}
           style={{
@@ -44,39 +44,28 @@ function BlogHome() {
         >
           {latestBlog.map((blog) => (
             <div className="m-4 p-4" key={blog.id}>
-              <SwiperSlide className="bg-amber-400" key={blog.id}>
+              <SwiperSlide className="bg-orange-500" key={blog.id}>
                 <NavLink to={`/blog/${blog.id}`}>
                   <div
-                    id="background-image"
                     className="flex flex-col"
                     style={{
                       backgroundImage: `url(${blog.cover})`,
                       backgroundSize: "cover",
                     }}
                   >
-                    <div id="empty-space" className="h-80"></div>
-                    <div id="content blur" className="text-white">
-                      <div
-                        id="content"
-                        className="flex backdrop-blur-sm flex-col mx-2 my-4"
-                      >
-                        <div id="title" className="text-xl md:text-4xl p-0.5">
+                    <div className="h-80"></div>
+                    <div className="text-white bg-black bg-opacity-40">
+                      <div className="flex flex-col mx-2 my-4 ">
+                        <div className="text-xl md:text-4xl p-0.5">
                           {blog.title}
                         </div>
-                        <div
-                          id="subtitle"
-                          className="text-lg md:text-2xl px-0.5 pb-1"
-                        >
+                        <div className="text-lg md:text-2xl px-0.5 pb-1 mt-2">
                           {blog.subtitle}
                         </div>
-                        <div id="footer" className="px-0.5">
-                          <div className="flex md:text-xl">
-                            <div id="date" className="">
-                              9 June,
-                            </div>
-                            <div id="time-read" className="">
-                              5-minute read
-                            </div>
+                        <div className="px-0.5">
+                          <div className="flex md:text-xl justify-between mt-1">
+                            <div className="">{blog.date}</div>
+                            <div className="">{blog.readTime}</div>
                           </div>
                         </div>
                       </div>
@@ -88,18 +77,15 @@ function BlogHome() {
           ))}
         </Swiper>
       </div>
-      <div id="blog-list" className="m-8 p-8">
-        <div
-          id="title"
-          className="p-4 my-4 text-3xl md:text-5xl text-amber-400"
-        >
-          Hot Articles
+      <div className="m-8 p-8">
+        <div className="p-4 my-4 text-3xl md:text-5xl text-orange-500 text-center">
+          Hot Articles :
+          <hr className="border-white mb-4 mx-auto w-1/2 mt-6" />
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {recentBlogs.map((blog) => (
             <div
-              id="card"
-              className="bg-gray-800 rounded m-x-fit m-4 p-4 w-full md:w-auto"
+              className="bg-gray-100 bg-opacity-30 hover:bg-opacity-50 cursor-pointer rounded m-x-fit m-4 p-4 w-full md:w-96"
               key={blog.id}
             >
               <img
@@ -107,35 +93,22 @@ function BlogHome() {
                 alt="Thumbnail"
                 className="w-full h-80 object-cover rounded-lg"
               />
-              <div
-                id="content"
-                className="flex backdrop-blur-sm flex-col mx-2 my-4"
-              >
-                <div
-                  id="title"
-                  className="text-xl md:text-2xl text-white p-0.5"
-                >
+              <div className="flex backdrop-blur-sm flex-col mx-2 my-4">
+                <div className="text-lg md:text-xl text-white p-0.5">
                   {blog.title}
                 </div>
-                <div
-                  id="subtitle"
-                  className="text-lg md:text-xl text-white px-0.5 pb-1"
-                >
+                <div className="text-sm md:text-md text-white px-0.5 pb-1">
                   {blog.subtitle}
                 </div>
-                <div id="footer" className="px-0.5 text-amber-400">
-                  <div className="flex md:text-xl">
-                    <div id="date" className="">
-                      9 June,&nbsp;
-                    </div>
-                    <div id="time-read" className="">
-                      5-minute read
-                    </div>
+                <div className="px-0.5 text-orange-500">
+                  <div className="flex md:text-xl justify-between">
+                    <div className="">{blog.date} ,&nbsp;</div>
+                    <div className="">{blog.readTime}</div>
                   </div>
                 </div>
               </div>
               <NavLink to={`/blog/${blog.id}`}>
-                <span className="text-white hover:text-amber-400 mx-2">
+                <span className="text-white hover:text-orange-500 mx-2">
                   Read More...
                 </span>
               </NavLink>

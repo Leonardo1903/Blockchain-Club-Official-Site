@@ -1,19 +1,18 @@
+import { useEffect, useState } from "react";
 import { BackgroundBoxesDemo } from "../BackgroundBoxes";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import EventData from "./EventData";
-// import Image1 from "./Image1.jsx";
-// import Image2 from "./Image2.jsx";
-// import Image3 from "./Image3.jsx";
-// import Image4 from "./Image4.jsx";
 
 function Event() {
-  const eventData = EventData();
-  const firstEvent = eventData[0];
+  const [events, setEvents] = useState([]);
 
-  const navigate = useNavigate();
-  const navigateToPage1 = () => {
-    navigate("/page");
-  };
+  useEffect(() => {
+    const eventData = EventData();
+    setEvents(eventData);
+  }, []);
+
+  const recentEvent = events.slice(-1)[0];
+  // const pastEvents = events.slice(0, -1);
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center p-4">
@@ -21,26 +20,51 @@ function Event() {
         heading={"OUR PAST EVENTS"}
         subheading={"Check out our past events and relive the magic! "}
       />
-      <div className="relative w-full max-w-5xl mt-12">
-        <img
-          src={firstEvent.Images[0]}
-          alt="Large"
-          className="w-full h-auto"
-          onClick={navigateToPage1}
-        />
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 backdrop-blur-lg">
-          <p>{firstEvent.Name}</p>
+
+      <h2 className="text-3xl font-bold mt-12">Latest Event</h2>
+      <hr className="border-white mb-4 mx-auto w-1/2 mt-6" />
+      {recentEvent && (
+        <div className="relative w-full max-w-5xl mt-12" key={recentEvent.id}>
+          {" "}
+          <NavLink to={`/events/${recentEvent.id}`}>
+            {" "}
+            <img
+              src={recentEvent.images[0]}
+              alt="Large"
+              className="w-full h-auto"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 backdrop-blur-lg flex justify-between">
+              <p>{recentEvent.name}</p>
+              <p>{recentEvent.date}</p>
+            </div>
+          </NavLink>
         </div>
-      </div>
+      )}
+
       {/* <div className="w-full max-w-5xl mt-8 text-center">
-        <h2 className="text-3xl font-bold">Recent Events</h2>
+        <h2 className="text-3xl font-bold ">Past Events</h2>
         <hr className="border-white mt-2 mb-8 mx-auto w-1/2" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Image1 />
-          <Image2 />
-          <Image3 />
-          <Image4 />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
+          {pastEvents.map((event, index) => (
+            <NavLink to={`/events/${event.id}`} key={event.id}>
+              <div className="relative border-4 border-black cursor-pointer">
+                <div className="border-4 border-orange-500">
+                  <img
+                    src={event.images[0]}
+                    alt={`Event ${index + 1}`}
+                    className="w-full object-cover"
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2">
+                  <span className="flex justify-between">
+                    <p>{event.name}</p>
+                    <p>{event.date}</p>
+                  </span>
+                </div>
+              </div>
+            </NavLink>
+          ))}
         </div>
       </div> */}
     </div>
