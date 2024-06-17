@@ -40,7 +40,7 @@ function BlogPost() {
   }, []);
 
   if (!blog) {
-    return <div>Loading...</div>;
+    <div className="text-3xl flex justify-center text-white">Loading...</div>;
   }
 
   return (

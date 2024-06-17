@@ -19,7 +19,7 @@ function BlogHome() {
   }, []);
 
   return (
-    <div className="bg-gray-950">
+    <div className="bg-black">
       <BackgroundBoxesDemo
         heading={"OUR BLOG"}
         subheading={"Read the latest and recent blogs on our site."}
