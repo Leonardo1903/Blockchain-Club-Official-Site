@@ -1,0 +1,150 @@
+import { useEffect, useState } from "react";
+import { BackgroundBoxesDemo } from "../BackgroundBoxes";
+import { NavLink } from "react-router-dom";
+import blogData from "./data/blogData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+function BlogHome() {
+  const [latestBlog, setLatestBlog] = useState([{}]);
+  const [recentBlogs, setRecentBlogs] = useState([]);
+
+  useEffect(() => {
+    setLatestBlog([blogData[0], blogData[1], blogData[2]]);
+    setRecentBlogs(blogData.slice(0));
+  }, []);
+
+  return (
+    <div className="bg-gray-950">
+      <BackgroundBoxesDemo
+        heading={"OUR BLOG"}
+        subheading={"Read the latest and recent blogs on our site."}
+      />
+      <div id="swiper" className="m-4 p-4 md:w-7/12 mx-auto mt-12">
+        <Swiper
+          spaceBetween={30}
+          style={{
+            "--swiper-navigation-color": "#FFA500",
+            "--swiper-pagination-color": "#FFA500",
+          }}
+          centeredSlides={true}
+          autoplay={{
+            delay: 7500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+        >
+          {latestBlog.map((blog) => (
+            <div className="m-4 p-4" key={blog.id}>
+              <SwiperSlide className="bg-amber-400" key={blog.id}>
+                <NavLink to={`/blog/${blog.id}`}>
+                  <div
+                    id="background-image"
+                    className="flex flex-col"
+                    style={{
+                      backgroundImage: `url(${blog.cover})`,
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    <div id="empty-space" className="h-80"></div>
+                    <div id="content blur" className="text-white">
+                      <div
+                        id="content"
+                        className="flex backdrop-blur-sm flex-col mx-2 my-4"
+                      >
+                        <div id="title" className="text-xl md:text-4xl p-0.5">
+                          {blog.title}
+                        </div>
+                        <div
+                          id="subtitle"
+                          className="text-lg md:text-2xl px-0.5 pb-1"
+                        >
+                          {blog.subtitle}
+                        </div>
+                        <div id="footer" className="px-0.5">
+                          <div className="flex md:text-xl">
+                            <div id="date" className="">
+                              9 June,
+                            </div>
+                            <div id="time-read" className="">
+                              5-minute read
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </NavLink>
+              </SwiperSlide>
+            </div>
+          ))}
+        </Swiper>
+      </div>
+      <div id="blog-list" className="m-8 p-8">
+        <div
+          id="title"
+          className="p-4 my-4 text-3xl md:text-5xl text-amber-400"
+        >
+          Hot Articles
+        </div>
+        <div className="flex flex-wrap">
+          {recentBlogs.map((blog) => (
+            <div
+              id="card"
+              className="bg-gray-800 rounded m-x-fit m-4 p-4 w-full md:w-auto"
+              key={blog.id}
+            >
+              <img
+                src={blog.thumbnail}
+                alt="Thumbnail"
+                className="w-full h-80 object-cover rounded-lg"
+              />
+              <div
+                id="content"
+                className="flex backdrop-blur-sm flex-col mx-2 my-4"
+              >
+                <div
+                  id="title"
+                  className="text-xl md:text-2xl text-white p-0.5"
+                >
+                  {blog.title}
+                </div>
+                <div
+                  id="subtitle"
+                  className="text-lg md:text-xl text-white px-0.5 pb-1"
+                >
+                  {blog.subtitle}
+                </div>
+                <div id="footer" className="px-0.5 text-amber-400">
+                  <div className="flex md:text-xl">
+                    <div id="date" className="">
+                      9 June,&nbsp;
+                    </div>
+                    <div id="time-read" className="">
+                      5-minute read
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <NavLink to={`/blog/${blog.id}`}>
+                <span className="text-white hover:text-amber-400 mx-2">
+                  Read More...
+                </span>
+              </NavLink>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default BlogHome;
