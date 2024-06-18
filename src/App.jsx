@@ -15,7 +15,7 @@ import {
 } from "./components";
 
 import Layout from "./Layout";
-
+import './App.css';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
