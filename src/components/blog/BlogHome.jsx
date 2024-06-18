@@ -24,7 +24,7 @@ function BlogHome() {
         heading={"OUR BLOG"}
         subheading={"Read the latest and recent blogs on our site."}
       />
-      <div className="m-4 p-4 md:w-7/12 mx-auto mt-12">
+      <div className="p-4 md:w-full rounded-md mt-8">
         <Swiper
           spaceBetween={30}
           style={{
@@ -43,8 +43,8 @@ function BlogHome() {
           modules={[Autoplay, Pagination, Navigation]}
         >
           {latestBlog.map((blog) => (
-            <div className="m-4 p-4" key={blog.id}>
-              <SwiperSlide className="bg-orange-500" key={blog.id}>
+            <div className="m-3 p-3" key={blog.id}>
+              <SwiperSlide className="bg-orange-400" key={blog.id}>
                 <NavLink to={`/blog/${blog.id}`}>
                   <div
                     className="flex flex-col"
@@ -53,7 +53,7 @@ function BlogHome() {
                       backgroundSize: "cover",
                     }}
                   >
-                    <div className="h-80"></div>
+                    <div className="h-96"></div>
                     <div className="text-white bg-black bg-opacity-40">
                       <div className="flex flex-col mx-2 my-4 ">
                         <div className="text-xl md:text-4xl p-0.5">
@@ -91,7 +91,7 @@ function BlogHome() {
               <img
                 src={blog.thumbnail}
                 alt="Thumbnail"
-                className="w-full h-80 object-cover rounded-lg"
+                className="w-full h-50 object-cover rounded-lg"
               />
               <div className="flex backdrop-blur-sm flex-col mx-2 my-4">
                 <div className="text-lg md:text-xl text-white p-0.5">
