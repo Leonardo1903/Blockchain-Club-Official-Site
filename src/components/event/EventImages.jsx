@@ -23,7 +23,7 @@ function EventImages() {
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center p-4">
-      <h1 className="text-3xl pb-10">{event.Name}</h1>
+      <h1 className="text-3xl pb-10">{event.name}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
         {event.images.map((image, index) => (
           <div
