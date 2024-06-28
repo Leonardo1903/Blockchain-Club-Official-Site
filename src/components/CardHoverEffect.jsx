@@ -1,7 +1,7 @@
 import { HoverEffect } from "./ui/card-hover-effect.tsx";
-import InnovationAnimationData from "../assets/InnovationAnimationData.json";
-import ImpactAnimationData from "../assets/ImpactAnimationData.json";
-import MotiveAnimationData from "../assets/MotiveAnimationData.json";
+import InnovationAnimationData from "../assets/Lottie/InnovationAnimationData.json";
+import ImpactAnimationData from "../assets/Lottie/ImpactAnimationData.json";
+import MotiveAnimationData from "../assets/Lottie/MotiveAnimationData.json";
 
 export function CardHoverEffectDemo() {
   const projects = [

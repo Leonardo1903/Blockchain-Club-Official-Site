@@ -10,12 +10,12 @@ import {
   motion,
   animate,
 } from "framer-motion";
-import BitcoinData from "../assets/BitcoinAnimation-1711696539205.json";
+import BitcoinData from "../assets/Lottie/BitcoinAnimation.json";
 import { GoogleGeminiEffectDemo } from "./google-gemini-effect";
 import { BackgroundBeamsDemo } from "./BackgroundBeams";
 import { CardHoverEffectDemo } from "./CardHoverEffect";
 import { PastEventsCards } from "./PastEvents";
-import eventImg from "../assets/CryptoCarnival.jpg";
+import eventImg from "../assets/Posters/CryptoCarnival.jpg";
 import { AnimatePresence } from "framer-motion";
 
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <>
-       {/* <AnimatePresence>
+      {/* <AnimatePresence>
         {isModalOpen && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -97,8 +97,7 @@ const Hero = () => {
               }}
               onClick={() => {
                 window.open("https://dub.sh/blockchain-club", "_blank");
-              }
-            }
+              }}
               className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 mx-auto"
             >
               Join Us!
