@@ -1,6 +1,6 @@
 import { BackgroundBoxesDemo } from "./BackgroundBoxes";
 import { SignupFormDemo } from "./Form";
-import ContactAnimationJson from "../assets/ContactAnimationData.json";
+import ContactAnimationJson from "../assets/Lottie/ContactAnimationData.json";
 import Lottie from "react-lottie";
 
 function Contact() {

@@ -12,7 +12,7 @@ function Event() {
   }, []);
 
   const recentEvent = events.slice(-1)[0];
-  // const pastEvents = events.slice(0, -1);
+  const pastEvents = events.slice(0, -1);
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center p-4">
@@ -41,7 +41,7 @@ function Event() {
         </div>
       )}
 
-      {/* <div className="w-full max-w-5xl mt-8 text-center">
+      <div className="w-full max-w-5xl mt-8 text-center">
         <h2 className="text-3xl font-bold ">Past Events</h2>
         <hr className="border-white mt-2 mb-8 mx-auto w-1/2" />
 
@@ -66,7 +66,7 @@ function Event() {
             </NavLink>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
