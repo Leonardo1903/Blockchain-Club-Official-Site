@@ -48,12 +48,12 @@ function Event() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
           {pastEvents.map((event, index) => (
             <NavLink to={`/events/${event.id}`} key={event.id}>
-              <div className="relative border-4 border-black cursor-pointer">
-                <div className="border-4 border-orange-500">
+              <div className="relative border-4 border-black cursor-pointer ">
+                <div className="border-4 border-orange-500 w-70 h-64">
                   <img
                     src={event.images[0]}
                     alt={`Event ${index + 1}`}
-                    className="w-full object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2">
