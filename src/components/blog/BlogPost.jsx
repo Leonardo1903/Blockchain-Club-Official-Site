@@ -44,7 +44,7 @@ function BlogPost() {
   }
 
   return (
-    <article className="max-w-8xl mx-auto text-black dark:text-white p-0 m-0">
+    <article className="article max-w-8xl mx-auto text-black dark:text-white p-0 m-0">
       <div
         className="sample-header h-full relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${blog.cover})` }}
@@ -58,7 +58,7 @@ function BlogPost() {
         </div>
       </div>
       <div className="sample-section-wrap relative bg-white dark:bg-black">
-        <div className="sample-section relative max-w-2xl mx-auto py-10 px-4">
+        <div className="sample-section relative max-w-2xl md:max-w-6xl mx-auto py-10 px-4">
           <h2 className="text-3xl uppercase my-3">{blog.title}</h2>
           <div className="mb-8 text-gray-700 dark:text-gray-300">
             <p>
