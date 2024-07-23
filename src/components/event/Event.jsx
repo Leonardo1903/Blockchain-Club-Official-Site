@@ -26,7 +26,7 @@ function Event() {
       {recentEvent && (
         <div className="relative w-full max-w-5xl mt-12" key={recentEvent.id}>
           {" "}
-          <NavLink to={`/events/${recentEvent.id}`}>
+          <NavLink to={`/events/${recentEvent.name}`}>
             {" "}
             <img
               src={recentEvent.images[0]}
@@ -47,7 +47,7 @@ function Event() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
           {pastEvents.map((event, index) => (
-            <NavLink to={`/events/${event.id}`} key={event.id}>
+            <NavLink to={`/events/${event.name}`} key={event.id}>
               <div className="relative border-4 border-black cursor-pointer ">
                 <div className="border-4 border-orange-500 w-70 h-64">
                   <img

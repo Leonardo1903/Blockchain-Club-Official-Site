@@ -7,17 +7,17 @@ import "./EventImages.css";
 
 function EventImages() {
   const [event, setEvent] = useState(null);
-  const { id } = useParams();
+  const { name } = useParams();
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
-    if (!id) {
+    if (!name) {
       return;
     }
     const eventData = EventData();
-    const foundEvent = eventData.find((event) => event.id.toString() === id);
+    const foundEvent = eventData.find((event) => event.name === name);
     setEvent(foundEvent);
-  }, [id]);
+  }, [name]);
 
   if (!event) {
     return (
@@ -27,7 +27,9 @@ function EventImages() {
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center p-4">
-      <h1 className="text-3xl pb-10" data-aos="fade-down">{event.name}</h1>
+      <h1 className="text-3xl pb-10" data-aos="fade-down">
+        {event.name}
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
         {event.images.map((image, index) => (
           <div
