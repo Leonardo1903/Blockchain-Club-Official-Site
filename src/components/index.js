@@ -7,6 +7,8 @@ import BlogHome from "./blog/BlogHome";
 import BlogPost from "./blog/BlogPost";
 import Events from "./event/Event";
 import EventImages from "./event/EventImages";
+import Teams from "./Team/Teams";
+import TeamDetails from "./Team/TeamDetails";
 
 export {
   Hero,
@@ -18,4 +20,6 @@ export {
   BlogPost,
   Events,
   EventImages,
+  Teams,
+  TeamDetails,
 };
