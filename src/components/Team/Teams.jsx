@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { ArrowRight, ArrowLeft } from "lucide-react";
-import { GlareCard } from "../ui/glare-card";
 import TeamData from "./TeamData";
+import { TiltCard } from "./TiltCard";
 
 function Teams() {
   const [teams, setTeams] = useState([]);
@@ -51,12 +51,13 @@ function Teams() {
         <div>
           {currentTeam && (
             <NavLink to={`/about/${currentTeam.name}`}>
-              <GlareCard
+              <TiltCard
+                teamName={currentTeam.name}
                 key={currentTeam.id}
-                className="flex justify-center items-center animate-fadeIn" // Added fadeIn animation
+                className="flex justify-center items-center"
               >
                 <h2 className="text-white text-4xl">{currentTeam.name}</h2>
-              </GlareCard>
+              </TiltCard>
             </NavLink>
           )}
         </div>

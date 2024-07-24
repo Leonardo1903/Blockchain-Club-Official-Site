@@ -27,7 +27,7 @@ function TeamDetails() {
         {team.name}
       </h2>
       <div className="flex justify-center flex-wrap mt-10">
-        <div className="flex justify-center w-full ">
+        <div className="flex justify-center w-full flex-wrap">
           {team.members
             .filter(
               (member) =>
@@ -37,12 +37,12 @@ function TeamDetails() {
             .map((member, index) => (
               <div
                 key={index}
-                className="w-[300px] rounded-md mx-4 border border-gray-600"
+                className="w-[300px] sm:w-[250px] xs:w-[200px] rounded-md mx-4 mb-4 border border-gray-600"
               >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="h-[500px] w-full rounded-md object-cover"
+                  className="h-[500px] sm:h-[400px] xs:h-[300px] w-full rounded-md object-cover"
                 />
                 <div className="p-4">
                   <h1 className="mt-3 text-lg text-gray-200">{member.name}</h1>
@@ -53,7 +53,7 @@ function TeamDetails() {
               </div>
             ))}
         </div>
-        <div className="flex justify-center w-full mt-8">
+        <div className="flex justify-center w-full flex-wrap mt-8">
           {team.members
             .filter(
               (member) =>
@@ -63,12 +63,12 @@ function TeamDetails() {
             .map((member, index) => (
               <div
                 key={index}
-                className="w-[300px] rounded-md mx-4 border border-gray-600"
+                className="w-[300px] sm:w-[250px] xs:w-[200px] rounded-md mx-4 mb-4 border border-gray-600"
               >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="h-[500px] w-full rounded-md object-cover"
+                  className="h-[500px] sm:h-[400px] xs:h-[300px] w-full rounded-md object-cover"
                 />
                 <div className="p-4">
                   <h1 className="mt-3 text-lg text-gray-200">{member.name}</h1>

@@ -191,11 +191,11 @@ const TeamData = () => [
         position: "Member",
         image: Holywin,
       },
-      // {
-      //   name: "Muskan Sharma",
-      //   position: "Member",
-      //   image: "https://randomuser.me/api/portraits",
-      // },
+      {
+        name: "Pragati Singh",
+        position: "Member",
+        image: Pragati,
+      },
       {
         name: "Harshit Jaiswal",
         position: "Member",
