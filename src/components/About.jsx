@@ -1,7 +1,7 @@
 import { ThreeDCardDemo } from "./3DCard.jsx";
 import { BackgroundBoxesDemo } from "./BackgroundBoxes.jsx";
 import {
-  AnandSir,
+  HemrajSir,
   NikhilSir,
   Agnibha,
   Aryan,
@@ -12,8 +12,8 @@ import Teams from "./Team/Teams";
 
 const users = [
   {
-    name: "Dr. Anand Motwani",
-    image: AnandSir,
+    name: "Dr. Hemraj S Lamkuche",
+    image: HemrajSir,
     position: "Faculty Coordinator",
   },
   {
