@@ -89,6 +89,11 @@ const TeamData = () => [
         image: Pearl,
       },
       {
+        name: "Saurabh",
+        position: "Co-Lead",
+        image: Saurabh,
+      },
+      {
         name: "Divyansh Sharma",
         position: "Member",
         image: Divyansh,
@@ -102,11 +107,6 @@ const TeamData = () => [
         name: "Hrithema",
         position: "Member",
         image: Hrithema,
-      },
-      {
-        name: "Saurabh Sharma",
-        position: "Member",
-        image: Saurabh,
       },
     ],
   },
@@ -277,11 +277,6 @@ const TeamData = () => [
         name: "Dinesh Tyagi",
         position: "Member",
         image: Dinesh,
-      },
-      {
-        name: "Avyaan verma",
-        position: "Member",
-        image: Avyaan,
       },
       {
         name: "Rishabh Munjal",
