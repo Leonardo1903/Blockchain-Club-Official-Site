@@ -7,6 +7,10 @@ import Blockchain5 from "./Blockchain-5.jpg";
 import Blockchain6 from "./Blockchain-6.jpg";
 import Blockchain7 from "./Blockchain-7.jpg";
 import Blockchain8 from "./Blockchain-8.jpg";
+import Blockchain9 from "./Blockchain-9.jpg";
+import Blockchain10 from "./Blockchain-10.jpg";
+import Blockchain11 from "./Blockchain-11.jpg";
+import Blockchain12 from "./Blockchain-12.jpg";
 
 
 export {
@@ -18,4 +22,8 @@ export {
     Blockchain6,
     Blockchain7,
     Blockchain8,
+    Blockchain9,
+    Blockchain10,
+    Blockchain11,
+    Blockchain12,
 };

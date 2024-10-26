@@ -52,6 +52,10 @@ import {
   Blockchain6,
   Blockchain7,
   Blockchain8,
+  Blockchain9,
+  Blockchain10,
+  Blockchain11,
+  Blockchain12,
 } from "../../assets/EventAssets/Blockchain";
 
 const EventData = () => [
@@ -114,7 +118,7 @@ const EventData = () => [
   },
   {
     id: 4,
-    name: "Blockchain",
+    name: "Blockchain Careers: Path to 30 LPA and a Decade of Opportunities",
     date: "17th Oct 2024",
     images: [
       Blockchain1,
@@ -125,6 +129,10 @@ const EventData = () => [
       Blockchain6,
       Blockchain7,
       Blockchain8,
+      Blockchain9,
+      Blockchain10,
+      Blockchain11,
+      Blockchain12,
     ],
   },
 ];
