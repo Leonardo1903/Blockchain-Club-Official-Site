@@ -1,4 +1,4 @@
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards.tsx";
+  import { InfiniteMovingCards } from "./ui/infinite-moving-cards.tsx";
 import EventData from "./event/EventData";
 
 export function PastEventsCards() {

@@ -43,6 +43,21 @@ import {
   CryptoCarnival12,
 } from "../../assets/EventAssets/CryptoCarnival";
 
+import {
+  Blockchain1,
+  Blockchain2,
+  Blockchain3,
+  Blockchain4,
+  Blockchain5,
+  Blockchain6,
+  Blockchain7,
+  Blockchain8,
+  Blockchain9,
+  Blockchain10,
+  Blockchain11,
+  Blockchain12,
+} from "../../assets/EventAssets/Blockchain";
+
 const EventData = () => [
   {
     id: 1,
@@ -99,6 +114,25 @@ const EventData = () => [
       CryptoCarnival10,
       CryptoCarnival11,
       CryptoCarnival12,
+    ],
+  },
+  {
+    id: 4,
+    name: "Blockchain Careers: Path to 30 LPA and a Decade of Opportunities",
+    date: "17th Oct 2024",
+    images: [
+      Blockchain1,
+      Blockchain2,
+      Blockchain3,
+      Blockchain4,
+      Blockchain5,
+      Blockchain6,
+      Blockchain7,
+      Blockchain8,
+      Blockchain9,
+      Blockchain10,
+      Blockchain11,
+      Blockchain12,
     ],
   },
 ];
