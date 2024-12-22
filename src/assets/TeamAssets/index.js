@@ -29,10 +29,8 @@ import Deepti from "./Social/Deepti.png";
 import Dikshika from "./Social/Dikshika.png";
 import Kopal from "./Social/Kopal.png";
 import Mrityunjay from "./Social/Mrityunjay.png";
-import Prachikumari from "./Social/Prachikumari.png";
 import Rishita from "./Social/Rishita.png";
 import Sreemukhi from "./Social/Sreemukhi.png";
-import Avyaan from "./Technical/Avyaan.png";
 import Dinesh from "./Technical/Dinesh.png";
 import Leonardo from "./Technical/Leonardo.png";
 import Piyush from "./Technical/Piyush.png";
@@ -72,10 +70,8 @@ export {
   Dikshika,
   Kopal,
   Mrityunjay,
-  Prachikumari,
   Rishita,
   Sreemukhi,
-  Avyaan,
   Dinesh,
   Leonardo,
   Piyush,
