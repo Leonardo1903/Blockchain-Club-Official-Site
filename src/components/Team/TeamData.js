@@ -30,7 +30,6 @@ import {
   Dikshika,
   Kopal,
   Mrityunjay,
-  Prachikumari,
   Rishita,
   Sreemukhi,
   Dinesh,
@@ -220,11 +219,6 @@ const TeamData = () => [
         name: "Mrityunjay Singh",
         position: "Co-Lead",
         image: Mrityunjay,
-      },
-      {
-        name: "Prachikumari Patel",
-        position: "Member",
-        image: Prachikumari,
       },
       {
         name: "Rishita Mehta",
