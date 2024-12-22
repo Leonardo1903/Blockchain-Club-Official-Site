@@ -33,7 +33,6 @@ import {
   Prachikumari,
   Rishita,
   Sreemukhi,
-  Avyaan,
   Dinesh,
   Leonardo,
   Piyush,
