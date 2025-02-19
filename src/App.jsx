@@ -4,8 +4,8 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import React, { lazy } from "react";
 import {
-  Hero,
   About,
   Contact,
   Events,
@@ -14,9 +14,11 @@ import {
   BlogPost,
   TeamDetails,
 } from "./components";
-
 import Layout from "./Layout";
 import "./App.css";
+import Preloader from "./components/Preloader";
+const Hero = lazy(() => import("./components/Hero"));
+
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -35,6 +37,7 @@ function App() {
 
   return (
     <>
+      <Preloader />
       <RouterProvider router={router} />
     </>
   );
