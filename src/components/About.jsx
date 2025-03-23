@@ -17,11 +17,6 @@ const users = [
     position: "Faculty Coordinator",
   },
   {
-    name: "Mr. Nikhil Pateria",
-    image: NikhilSir,
-    position: "Faculty Co-Coordinator",
-  },
-  {
     name: "Agnibha Chakraborty",
     image: Agnibha,
     position: "President",
