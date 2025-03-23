@@ -17,6 +17,7 @@ import { CardHoverEffectDemo } from "./CardHoverEffect";
 import { PastEventsCards } from "./PastEvents";
 import eventImg from "../assets/Posters/CryptoCarnival.jpg";
 import { AnimatePresence } from "framer-motion";
+import Sponsors from "./sponsors/Sponsors";
 
 const COLORS_TOP = ["#FFA500", "#FF0000", "#E34234"];
 
@@ -127,6 +128,7 @@ const Hero = () => {
       {/* Motive */}
       <GoogleGeminiEffectDemo />
       <BackgroundBeamsDemo component={CardHoverEffectDemo} />
+      <Sponsors />
       <section>
         <PastEventsCards />
       </section>
