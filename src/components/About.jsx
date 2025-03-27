@@ -52,7 +52,7 @@ function About() {
         <div className="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:flex-wrap md:space-x-4 mx-auto md:w-[1182px]">
           {/* First row */}
           <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0 w-full">
-            {users.slice(0, 2).map((user) => (
+            {users.slice(0, 1).map((user) => (
               <ThreeDCardDemo
                 key={user.name}
                 user={user}
@@ -64,7 +64,7 @@ function About() {
           </div>
           {/* Second row */}
           <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0 w-full">
-            {users.slice(2, 4).map((user) => (
+            {users.slice(1, 3).map((user) => (
               <ThreeDCardDemo
                 key={user.name}
                 user={user}
@@ -76,7 +76,7 @@ function About() {
           </div>
           {/* Third row */}
           <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0 w-full">
-            {users.slice(4, 6).map((user) => (
+            {users.slice(3, 6).map((user) => (
               <ThreeDCardDemo
                 key={user.name}
                 user={user}
