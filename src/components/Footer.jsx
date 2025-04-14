@@ -53,7 +53,7 @@ function Footer() {
                       <FaLinkedin className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
                     </a>
                     <a
-                      href="https://www.instagram.com/blockchain_club_vitb/"
+                      href="https://www.instagram.com/blockchain.vitb/"
                       target="_blank"
                     >
                       <FaInstagram className=" text-gray-100 hover:text-orange-500 text-base mt-1 mx-1" />
